@@ -134,6 +134,7 @@ img {
  margin: inherit;
  z-index:9999;
  border-bottom: none;
+ top: 10%;
 }
 .slider{
     position:relative;
@@ -334,11 +335,10 @@ img {
     clear: both;
   }
   .slider, .slider-item, .slider-box, .slidewrapper li {
-    width: 500px; 
+    width: 460px; 
     height: 850px;
   }
    .slider-box {
-    top: 20%;
     left: 5%;
     }
   .slider #photo-2 img {

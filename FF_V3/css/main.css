@@ -10,9 +10,7 @@ body {
 }
 .row, .container {
   padding: 0 !important;
-}
-br {
-    display: none;
+  position: relative;
 }
 h1 {
   text-align: center;
@@ -30,16 +28,33 @@ h3 {
   color: #eeeeee;
   background-color: #9ba9b5;
   font-size: 1.2em;
-  padding: 3%;
+  padding: 1%;
+  border-radius: 10px;
+  width: 40%;
+  text-align: center;
+  margin: 0 auto;
 }
 h4 {
   padding: 1%;
 }
 .digit {
-  font-size: 3vw;
-  background-color: #c6cdd2;
-  padding: 3% 5%;
+  text-align: center;
+  width: 8%;
+  color: #fff;
+  font-size: 2vw;
+  background-color: #000;
   border-radius: 10%;
+  float: left;
+}
+a, a:hover, a:active {
+  color:#000;
+  text-decoration: underline;
+}
+a:hover {
+  text-decoration: none;
+}
+a:visited {
+  color:#444;
 }
 .btn {
   margin-bottom:10px;
@@ -48,83 +63,118 @@ h4 {
 .btn-default, .btn-default:visited {
   color: rgba(255, 255, 255, 0.8);
   background-color: #000;
-  border: none;
+  border-color: #000;
 }
 .btn-default:hover, .btn-default:active, .btn-default:focus, .btn-default:active:hover, .btn-default:active:focus {
   color:#fff;
   background:#333;
-  background-color: #c6cdd2;
+  border-color: #333;
 }
 .pricing_plan {
-  background-color: rgba(0,0,0,.1); 
   border-radius: 4px;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-direction: column;
-  flex-direction: column;
-  -webkit-align-items: stretch;
-  align-items: stretch;
   text-align: center;
-  padding: 1em;
-  margin-top: 1%;
-  color: #000; 
+  margin-top: 0;
   cursor: default;
   overflow: hidden;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  border-top: 5px solid #000;
   position: relative;
-}
-/* смена фона при нажатии */
-.pricing_plan:hover {
-  color: #444;
-  background: #ddd;
 }
 /*заголовок*/
 .pricing_plan h3 {
   font-size: 1.8vw;
-  margin: 0.5em 0 0;
   color: #fff;
   background: #000;
 }
 .price {
-  font-size: 1.9vw;
+  font-size: 3vw;
   font-weight: bold;
   text-align: center;
-  color: #fff;
   position: relative;
   z-index: 100;
-  line-height: 250%;
-  max-width: 50%;
-  margin: 1.15em auto 1em;
-  border-radius: 10px;
-  background: #000;
+  line-height: 150%;
+  margin: 1% auto;
   -webkit-transition: color 0.3s, background 0.3s;
   transition: color 0.3s, background 0.3s;
 }
 .pricing_plan ul {
   font-size: 1.7vw;
   margin: 0;
-  padding: 3%;
+  padding-right: 0;
+  -webkit-padding-start: 0;
   text-align: left;
 }
 .pricing_plan li {
-  padding: 5%;
+  padding: 1%;
   margin: 1%;
-  background-color: #eef2f5;
   border-radius: 10px;
 }
-/*кнопка заказа тарифа*/
-a {
-  margin-top: auto;
-  color: #000;
-  border-radius: 5px;
-  text-decoration: underline;
-  -webkit-transition: background-color 0.5s;
-  transition: background-color 0.5s;
-  white-space: nowrap;
+.photo-1 {
+  height: 750px;
+  overflow: hidden;
 }
-/*смена цвета при нажатии кнопки*/
-a:hover, a:focus {
-  background-color: #c6cdd2;
+.photo-2 {
+  height: 970px;
+  overflow: hidden;
+}
+.photo-3 {
+  background-image: url("img/studio_mini.jpg");
+  background-color: #f3f5f6;
+  background-size: 100% 100%;
+  background-position: 100% 0%;
+  background-repeat: no-repeat;
+}
+.text {
+  background-color: rgba(255, 255, 255, .3);
+  width: 40%;
+  padding: .5%;
+  margin-top: 1%;
+  border-radius: 10px;
+}
+.bridge {
+  width: 5%;
+  height: 77px;
+  float: left;
+  border-right: 5px solid #000;
+  margin-left: 1%;
+}
+.bridge_1 {
+  width: 5%;
+  height: 33px;
+  float: left;
+  border-right: 5px solid #000;
+  margin-left: -8.7%;
+}
+.digit_2 {
+  text-align: center;
+  width: 8%;
+  color: #fff;
+  font-size: 2vw;
+  background-color: #000;
+  border-radius: 10%;
+  float: right;
+}
+.text_2 {
+  background-color: rgba(255, 255, 255, .3);
+  width: 40%;
+  padding: .5%;
+  margin-top: 1%;
+  border-radius: 10px;
+  float: right;
+}
+.bridge_2 {
+  width: 5%;
+  height: 77px;
+  float: right;
+  border-right: 5px solid #000;
+  margin-right: 5.5%;
+}
+.bridge_3 {
+  width: 5%;
+  height: 33px;
+  float: right;
+  border-right: 5px solid #000;
+  margin-right: 5.5%;
 }
 /********** Large devices only ***********/
 @media (min-width: 1200px) {
@@ -132,33 +182,20 @@ a:hover, a:focus {
     font-size: 1.4vw;
   } 
   .pricing_plan ul {
-  font-size: 1vw;
-  }
-  .featured {
-  z-index: 10;
-  margin: 0;
-  font-size: 1.1em;
+   font-size: 1vw;
   }
   .pricing_plan {
-   margin: 1.5em 0;
   }
 }
-
 /********** Medium devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
   .pricing_plan h3 {
     font-size: 1.5vw;
   }
   .pricing_plan ul {
-  font-size: 1.3vw;
+   font-size: 1.3vw;
   } 
 }
-
-/********** Small devices only **********/
-@media (min-width: 768px) and (max-width: 991px) {
- 
-}
- 
 /********** Extra small devices only **********/
 @media (max-width: 767px) {
   .pricing_plan h3, .price {

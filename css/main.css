@@ -118,7 +118,7 @@ a:visited {
 }
 .order {
   position: absolute;
-  bottom: 2%;
+  bottom: 3%;
   right: 0;
 }
 .price {
@@ -249,7 +249,7 @@ li > .text {
 @media (min-width: 992px) and (max-width: 1199px) {
   .container, .pricing_plan {
     width: 90vw;
-    height: 70vh;
+    height: 75vh;
   }
   h4 {
     width: 20%;
@@ -269,6 +269,9 @@ li > .text {
   } 
   .portlet-content {
     margin: 0;
+  }
+  .order {
+    bottom: 0;
   } 
 }
 /********** Small devices only **********/
@@ -277,42 +280,63 @@ li > .text {
     font-size: 3vw;
   }
   .pricing_plan ul {
-   font-size: 2.5vw;
+   font-size: 2vw;
+  }
+  h4 {
+    width: 30%;
+  }
+  .square {
+    width: 8%;
   }
   .digit {
-  font-size: 3.5vw;
+  font-size: 3vw;
   line-height: 2.1; 
   } 
   .btn {
     font-size: 2vw;
   }
   .price {
-    font-size: 5vw;
+    font-size: 4vw;
   }
 }
 /********** Extra small devices only **********/
 @media (max-width: 767px) {
+  .container, .pricing_plan {
+    height: 70vh;
+  }
   .pricing_plan h3, .price {
     padding: 1%;
     font-size: 3vw;
   }
   .price {
+    font-size: 4vw;
     margin: 1% auto;
   }
   .pricing_plan ul {
-  font-size: 3vw;
-  line-height: 1;
+    font-size: 2.5vw;
+    line-height: 1.25;
+  }
+  h4 {
+    width: 30%;
+  }
+  .square {
+    width: 8%;
   }
   .digit {
-  font-size: 3.5vw;
-  line-height: 2.8; 
+    font-size: 3vw;
+    line-height: 2.1; 
   }
-  
+  .btn {
+    font-size: 2vw;
+  }
 }
 /********** Super extra small devices Only (e.g., iPhone 4) **********/
 @media (max-width: 479px) {
   h2 {
     font-size: 4vw;
+  }
+  .container, .pricing_plan {
+    height: 50vh;
   }
   .pricing_plan h3, .price, .pricing_plan ul {
     font-size: 3vw;
@@ -321,9 +345,13 @@ li > .text {
     padding: 1%;
   }
   .price {
+    font-size: 5vw;
     margin: 1% auto;
   }
   .pricing_plan ul {
-   line-height: 1.1;
+   line-height: 1.25;
+  }
+  .btn {
+    font-size: 2.5vw;
   }
 }

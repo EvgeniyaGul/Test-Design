@@ -147,7 +147,8 @@ a:visited {
   border-radius: 10px;
 }
 .pricing_plan > button {
-  width: 15%;
+  width: 12%;
+  height: 5%;
   margin: 0;
   position: absolute;
   top: 0;

@@ -1,0 +1,375 @@
+body {
+  padding-top: 55px;
+  background-color: #fff;
+  color: #333;
+  font-family: 'Play', sans-serif;
+  font-size: 14px;
+  padding: 10px;
+  height: 100%;
+  width: 100%;
+}
+.row, .container {
+  padding: 0 !important;
+  position: relative;
+}
+.container {
+  width: 90vw;
+  height: 90vh;
+}
+h1 {
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+}
+h2 {
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: bold;
+  padding-bottom: 3%;
+}
+h3 {
+  display: inline-block;
+  font-size: 1.8vw;
+  color: #fff;
+  background: #000;
+  position: relative;
+  text-align: center;
+  padding: 1%;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  z-index: 1;
+}
+h4 {
+  width: 30%;
+}
+a, a:hover, a:active {
+  color:#000;
+  text-decoration: underline;
+}
+a:hover {
+  text-decoration: none;
+}
+a:visited {
+  color:#444;
+}
+.btn {
+  margin-bottom:10px;
+  text-decoration:none;
+  font-size: 1vw;
+}
+.btn-default, .btn-default:visited {
+  color: rgba(255, 255, 255, 0.8);
+  background-color: #000;
+  border-color: #000;
+}
+.show:focus ~ .portlet-content {
+   display: block;
+}
+.btn-default:hover, .btn-default:active, .btn-default:focus, .btn-default:active:hover, .btn-default:active:focus {
+  color:#fff;
+  background:#333;
+  border-color: #333;
+  outline: none
+}
+.pricing-plan {
+  width: 90vw;
+  height: 90vh;
+  border-radius: 4px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+  cursor: default;
+  overflow: hidden;
+  position: relative;
+}
+.square {
+  position: relative;
+  width: 9%;
+  float: left;
+}
+.square::before {
+  content: "";
+  display: block;
+  margin-top: 100%;
+}
+.digit {
+  text-align: center;
+  color: #fff;
+  font-size: 2vw;
+  line-height: 2.3;
+  background-color: #000;
+  border-radius: 10%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.order {
+  position: absolute;
+  bottom: 3%;
+  right: 0;
+}
+.price {
+  font-size: 3vw;
+  background-color: rgba(255, 255, 255, .3);
+  font-weight: bold;
+  text-align: center;
+  padding: .5% !important;
+  margin: 2% auto !important;
+  position: relative;
+  z-index: 100;
+  line-height: 150%;
+  margin: 1% auto;
+}
+.pricing-plan ul {
+  font-size: 1.2vw;
+  -webkit-padding-start: 0;
+  text-align: left;
+}
+.pricing-plan li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: .4%;
+  border-radius: 10px;
+}
+.options li:before {
+    content: "•"; /* Insert content that looks like bullets */
+    padding-right: 8px;
+    color: #000;
+}
+.pricing-plan > button {
+  width: 12%;
+  height: 5%;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+.photo {
+  background-blend-mode: screen;
+  background-size: cover;
+  background-position: 100% 0%;
+  background-repeat: no-repeat;
+
+}
+.photo-1 {
+  background-image:
+   url("../img/street1.jpg"),
+   linear-gradient(to bottom right, rgba(255,255,255, 0.5) 20%, rgba(255,255,255, 0));
+}
+.photo-2 {
+  background-image: 
+    url("../img/street2.jpg"),
+    linear-gradient(to bottom right, rgba(255,255,255, 0.5) 20%, rgba(255,255,255, 0));
+}
+.photo-3 {
+  background-image: 
+    url("../img/studio_econom.jpg"),
+    linear-gradient(to bottom right, rgba(255,255,255, 0.5) 20%, rgba(255,255,255, 0));
+}
+.photo-4 {
+  background-image: 
+    url("../img/studio_mini.jpg"),
+    linear-gradient(to bottom right, rgba(255,255,255, 0.5) 20%, rgba(255,255,255, 0));
+}
+/*:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: 
+    url("../img/studio_standard.jpg"),
+    linear-gradient(to bottom right, rgba(255,255,255, 0.5) 20%, rgba(255,255,255, 0));
+  background-size: cover;
+  -webkit-transform: scaleX(-1);
+  -moz-transform: scaleX(-1);
+  -ms-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  transform: scaleX(-1);
+}*/
+.photo-5 {
+  background-image: 
+    url("../img/studio_standard.jpg"),
+    linear-gradient(to bottom right, rgba(255,255,255, 0.5) 20%, rgba(255,255,255, 0));
+}
+.photo-6 {
+  background-image: 
+    url("../img/studio_maxi.jpg"),
+    linear-gradient(to bottom right, rgba(255, 255, 255, .5) 20%, rgba(255,255,255, 0));
+}
+.photo-7 {
+  background-image: 
+    url("../img/marriage_mini.jpg"),
+    linear-gradient(to bottom right, rgba(255,255,255, 0.5) 20%, rgba(255,255,255, 0));
+}
+.photo-8 {
+  background-image: 
+    url("../img/marriage_standard.jpg"),
+    linear-gradient(to bottom right, rgba(255,255,255, .5) 20%, rgba(255,255,255, 0));
+}
+.photo-9 {
+  background-image: 
+    url("../img/marriage_full.jpg"),
+    linear-gradient(to bottom right, rgba(255, 255, 255, .6) 50%, rgba(255,255,255, 0));
+}
+.text {
+  padding: 0 0 0 2%;
+  margin-left: -1%;
+  border-radius: 5px;
+}
+li > .text {
+  width: 100%;
+}
+.portlet-content {
+  display: none;
+  margin: auto;
+}
+.portlet-content:target {
+  display: block;
+}
+.panel, .panel-default > .panel-heading, .panel-footer {
+  border: none;
+  background-color: rgba(255, 255, 255, .3);
+}
+.panel-heading h3 {
+  color: #444;
+  background-color: rgba(255, 255, 255, .3);
+}
+.panel-body {
+  text-align: left;
+}
+.form-control {
+   background-color: rgba(255, 255, 255, .3);
+}
+/********** Large devices only ***********/
+@media (min-width: 1200px) {
+  .pricing_plan h3 {
+    font-size: 1.4vw;
+  } 
+  .pricing_plan ul {
+  }
+  .digit {
+  font-size: 1.9vw;
+  line-height: 2; 
+  } 
+}
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  .container, .pricing_plan {
+    width: 90vw;
+    height: 75vh;
+  }
+  .pricing_plan h3 {
+    font-size: 1.6vw;
+  }
+  .pricing_plan ul {
+    font-size: 1.3vw;
+  }
+  .square {
+    width: 12%;
+  }
+  .digit {
+  font-size: 2.5vw;
+  line-height: 1.9; 
+  } 
+  .portlet-content {
+    margin: 0;
+  }
+  .order {
+    bottom: 0;
+  } 
+}
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .pricing_plan h3 {
+    font-size: 3vw;
+  }
+  .pricing_plan ul {
+   font-size: 2vw;
+  }
+  
+  #inverse-text, .text {
+    background-color: transparent;
+  }
+  .square {
+    width: 8%;
+  }
+  .digit {
+  font-size: 3vw;
+  line-height: 2.1; 
+  } 
+  .btn {
+    font-size: 2vw;
+  }
+  .price {
+    background-color: rgba(255, 255, 255, .3);
+    font-size: 4vw;
+  }
+}
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  .container, .pricing_plan {
+    height: 70vh;
+  }
+  #inverse-text, .text {
+    background-color: transparent;
+  }
+  .pricing_plan h3, .price {
+    padding: 1.5%;
+    font-size: 3vw;
+  }
+  .price {
+    background-color: rgba(255, 255, 255, .3);
+    font-size: 4vw;
+    margin: 1% auto;
+  }
+  #options-6, #options-9 {
+    background-color: rgba(51, 51, 51, .5);
+  } 
+  .pricing_plan ul {
+    font-size: 2.5vw;
+    line-height: 1.25;
+  }
+  .square {
+    width: 8%;
+  }
+  .digit {
+    font-size: 3vw;
+    line-height: 2.1; 
+  }
+  .btn {
+    font-size: 2vw;
+  }
+}
+/********** Super extra small devices Only (e.g., iPhone 4) **********/
+@media (max-width: 479px) {
+  h2 {
+    font-size: 4vw;
+  }
+  .container, .pricing_plan {
+    height: 50vh;
+  }
+  .pricing_plan h3, .price, .pricing_plan ul {
+    font-size: 3vw;
+  }  
+  .pricing_plan h3 {
+    padding: 1%;
+  }
+  .price {
+    background-color: rgba(255, 255, 255, .3);
+    font-size: 5vw;
+    margin: 1% auto;
+  }
+  .pricing_plan ul {
+   line-height: 1.25;
+  }
+  .btn {
+    font-size: 2.5vw;
+  }
+}

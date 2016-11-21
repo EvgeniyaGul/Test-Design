@@ -311,9 +311,9 @@ li > .text {
   line-height: 2;
   margin: 1% auto !important;
   }
-  .btn {
-    font-size: 2vw;
-  }
+  .order .btn {
+  font-size: 2vw;
+}
   .order {
     position: relative;
   }
@@ -354,9 +354,9 @@ li > .text {
   line-height: 2;
   margin: 1% auto !important;
   }
-  .btn {
-    font-size: 2vw;
-  }
+  .order .btn {
+  font-size: 2vw;
+}
   .order {
     position: relative;
   } 

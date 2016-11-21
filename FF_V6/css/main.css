@@ -29,7 +29,7 @@ h2 {
 }
 h3 {
   display: inline-block;
-  font-size: 1.8vw;
+  font-size: 2.5vw;
   color: #fff;
   background: #000;
   position: relative;
@@ -41,7 +41,7 @@ h3 {
   z-index: 1;
 }
 h4 {
-  width: 30%;
+  width: 85%;
 }
 a, a:hover, a:active {
   color:#000;
@@ -53,12 +53,12 @@ a:hover {
 a:visited {
   color:#444;
 }
-.btn {
+.order .btn {
   margin-bottom:10px;
   text-decoration:none;
-  font-size: 1vw;
+  font-size: 1.1vw;
 }
-.btn-default, .btn-default:visited {
+.btn-default, .order .btn-default:visited {
   color: rgba(255, 255, 255, 0.8);
   background-color: #000;
   border-color: #000;
@@ -85,7 +85,7 @@ a:visited {
 }
 .square {
   position: relative;
-  width: 9%;
+  width: 14%;
   float: left;
 }
 .square::before {
@@ -96,8 +96,8 @@ a:visited {
 .digit {
   text-align: center;
   color: #fff;
-  font-size: 2vw;
-  line-height: 2.3;
+  font-size: 3.5vw;
+  line-height: 2;
   background-color: #000;
   border-radius: 10%;
   position: absolute;
@@ -116,23 +116,23 @@ a:visited {
   background-color: rgba(255, 255, 255, .3);
   font-weight: bold;
   text-align: center;
-  padding: .5% !important;
-  margin: 2% auto !important;
+  margin: 3% auto !important;
   position: relative;
   z-index: 100;
   line-height: 150%;
   margin: 1% auto;
 }
-.pricing-plan ul {
-  font-size: 1.2vw;
+ul {
+  font-size: 1.5vw;
   -webkit-padding-start: 0;
   text-align: left;
+  margin: 2% 0 0 2%;
 }
-.pricing-plan li {
+li {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding: .4%;
+  margin: 1%;
   border-radius: 10px;
 }
 .options li:before {
@@ -149,32 +149,36 @@ a:visited {
   left: 0;
   z-index: 100;
 }
+.options-full {
+  position: absolute;
+  bottom: 0;
+}
 .photo {
+  position: relative;
   background-blend-mode: screen;
   background-size: cover;
   background-position: 100% 0%;
   background-repeat: no-repeat;
-
 }
 .photo-1 {
   background-image:
    url("../img/street1.jpg"),
-   linear-gradient(to bottom right, rgba(255,255,255, 0.5) 20%, rgba(255,255,255, 0));
+   linear-gradient(to top, rgba(255,255,255, 0.6) 30%, rgba(255,255,255, 0));
 }
 .photo-2 {
   background-image: 
     url("../img/street2.jpg"),
-    linear-gradient(to bottom right, rgba(255,255,255, 0.5) 20%, rgba(255,255,255, 0));
+    linear-gradient(to top, rgba(255,255,255, 0.6) 30%, rgba(255,255,255, 0));
 }
 .photo-3 {
   background-image: 
     url("../img/studio_econom.jpg"),
-    linear-gradient(to bottom right, rgba(255,255,255, 0.5) 20%, rgba(255,255,255, 0));
+    linear-gradient(to top, rgba(255,255,255, 0.6) 30%, rgba(255,255,255, 0));
 }
 .photo-4 {
   background-image: 
     url("../img/studio_mini.jpg"),
-    linear-gradient(to bottom right, rgba(255,255,255, 0.5) 20%, rgba(255,255,255, 0));
+    linear-gradient(to top, rgba(255,255,255, 0.6) 30%, rgba(255,255,255, 0));
 }
 /*:before {
   content: '';
@@ -196,27 +200,27 @@ a:visited {
 .photo-5 {
   background-image: 
     url("../img/studio_standard.jpg"),
-    linear-gradient(to bottom right, rgba(255,255,255, 0.5) 20%, rgba(255,255,255, 0));
+    linear-gradient(to top, rgba(255,255,255, .5) 80%, rgba(255,255,255, 0.2));
 }
 .photo-6 {
   background-image: 
     url("../img/studio_maxi.jpg"),
-    linear-gradient(to bottom right, rgba(255, 255, 255, .5) 20%, rgba(255,255,255, 0));
+    linear-gradient(to top, rgba(255, 255, 255, .5) 100%, rgba(255,255,255, 0));
 }
 .photo-7 {
   background-image: 
     url("../img/marriage_mini.jpg"),
-    linear-gradient(to bottom right, rgba(255,255,255, 0.5) 20%, rgba(255,255,255, 0));
+    linear-gradient(to top, rgba(255,255,255, .6) 30%, rgba(255,255,255, 0));
 }
 .photo-8 {
   background-image: 
     url("../img/marriage_standard.jpg"),
-    linear-gradient(to bottom right, rgba(255,255,255, .5) 20%, rgba(255,255,255, 0));
+    linear-gradient(to top, rgba(255,255,255, .6) 30%, rgba(255,255,255, 0));
 }
 .photo-9 {
   background-image: 
     url("../img/marriage_full.jpg"),
-    linear-gradient(to bottom right, rgba(255, 255, 255, .6) 50%, rgba(255,255,255, 0));
+    linear-gradient(to top, rgba(255, 255, 255, .6) 80%, rgba(255,255,255, 0.2));
 }
 .text {
   padding: 0 0 0 2%;
@@ -227,55 +231,36 @@ li > .text {
   width: 100%;
 }
 .portlet-content {
-  display: none;
   margin: auto;
 }
-.portlet-content:target {
-  display: block;
-}
-.panel, .panel-default > .panel-heading, .panel-footer {
-  border: none;
-  background-color: rgba(255, 255, 255, .3);
-}
-.panel-heading h3 {
-  color: #444;
-  background-color: rgba(255, 255, 255, .3);
-}
-.panel-body {
-  text-align: left;
-}
-.form-control {
-   background-color: rgba(255, 255, 255, .3);
+.panel-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+    color: #444;
+    background-color: rgba(255, 255, 255, .3);
 }
 /********** Large devices only ***********/
 @media (min-width: 1200px) {
-  .pricing_plan h3 {
-    font-size: 1.4vw;
-  } 
-  .pricing_plan ul {
-  }
-  .digit {
-  font-size: 1.9vw;
-  line-height: 2; 
-  } 
+   
 }
 /********** Medium devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
-  .container, .pricing_plan {
+  .pricing-plan {
     width: 90vw;
     height: 75vh;
   }
-  .pricing_plan h3 {
-    font-size: 1.6vw;
+  h3 {
+    font-size: 2vw;
   }
-  .pricing_plan ul {
-    font-size: 1.3vw;
+  ul {
+    font-size: 2vw;
   }
   .square {
-    width: 12%;
+    width: 17%;
   }
-  .digit {
-  font-size: 2.5vw;
+  .digit, .price {
+  font-size: 4vw;
   line-height: 1.9; 
   } 
   .portlet-content {
@@ -283,82 +268,128 @@ li > .text {
   }
   .order {
     bottom: 0;
-  } 
+  }
+  .btn {
+    font-size: 1vw;
+  }
 }
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
-  .pricing_plan h3 {
+  .pricing-plan {
+    width: 90vw;
+    height: 70vh;
+  }
+  .options-full {
+    position: relative;
+  }
+  .pricing-content {
+    position: absolute;
+    bottom: 0;
+  }
+  h3 {
     font-size: 3vw;
   }
-  .pricing_plan ul {
-   font-size: 2vw;
+  h4 {
+    width: 40%;
   }
-  
-  #inverse-text, .text {
-    background-color: transparent;
+  ul {
+   font-size: 2vw;
+   margin: 1% 0 0 0;
+  }
+  li {
+    margin: 2%;
   }
   .square {
-    width: 8%;
+    width: 10%;
   }
-  .digit {
-  font-size: 3vw;
-  line-height: 2.1; 
+  .digit  {
+  font-size: 4vw;
+  line-height: 1.9; 
   } 
+  .price {
+  font-size: 3vw;
+  line-height: 2;
+  margin: 1% auto !important;
+  }
   .btn {
     font-size: 2vw;
   }
-  .price {
-    background-color: rgba(255, 255, 255, .3);
-    font-size: 4vw;
+  .order {
+    position: relative;
   }
 }
 /********** Extra small devices only **********/
 @media (max-width: 767px) {
-  .container, .pricing_plan {
+  .pricing-plan {
+    width: 90vw;
     height: 70vh;
   }
-  #inverse-text, .text {
-    background-color: transparent;
+  .options-full {
+    position: relative;
   }
-  .pricing_plan h3, .price {
-    padding: 1.5%;
+  .pricing-content {
+    position: absolute;
+    bottom: 0;
+  }
+  .digit  {
+  font-size: 5.2vw;
+  line-height: 2; 
+  } 
+  h3 {
     font-size: 3vw;
   }
-  .price {
-    background-color: rgba(255, 255, 255, .3);
-    font-size: 4vw;
-    margin: 1% auto;
+  h4 {
+    width: 40%;
   }
-  #options-6, #options-9 {
-    background-color: rgba(51, 51, 51, .5);
-  } 
-  .pricing_plan ul {
-    font-size: 2.5vw;
-    line-height: 1.25;
+  ul {
+   font-size: 3vw;
+   margin: 2% 0 0 0;
   }
   .square {
-    width: 8%;
+    width: 15%;
   }
-  .digit {
-    font-size: 3vw;
-    line-height: 2.1; 
+  
+  .price {
+  font-size: 4vw;
+  line-height: 2;
+  margin: 1% auto !important;
   }
   .btn {
     font-size: 2vw;
   }
+  .order {
+    position: relative;
+  } 
 }
 /********** Super extra small devices Only (e.g., iPhone 4) **********/
 @media (max-width: 479px) {
   h2 {
     font-size: 4vw;
   }
-  .container, .pricing_plan {
+  h3 {
+    font-size: 4vw;
+  }
+  .pricing-plan {
     height: 50vh;
   }
-  .pricing_plan h3, .price, .pricing_plan ul {
-    font-size: 3vw;
+  .pricing-content {
+    position: absolute;
+    bottom: 0;
+  }
+  .price, .pricing-plan ul {
+    font-size: 3.2vw;
+  }
+  li {
+    margin: 2%;
+  }
+  .square {
+    width: 15%;
+  } 
+  .digit  {
+  font-size: 5vw;
+  line-height: 2.1; 
   }  
-  .pricing_plan h3 {
+  .pricing-plan h3 {
     padding: 1%;
   }
   .price {
@@ -366,7 +397,7 @@ li > .text {
     font-size: 5vw;
     margin: 1% auto;
   }
-  .pricing_plan ul {
+  .pricing-plan ul {
    line-height: 1.25;
   }
   .btn {

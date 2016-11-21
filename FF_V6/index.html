@@ -7,7 +7,6 @@
     <title>Prices</title>
     <link rel='stylesheet' type='text/css' href='css/reset.css'>
     <link href='https://fonts.googleapis.com/css?family=Play' rel='stylesheet'>
-    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel='stylesheet' href='css/bootstrap.min.css'>
     <link rel='stylesheet' href='css/main.css'>
     <!--jQuery Core Library-->
@@ -25,8 +24,9 @@
               <div class="container-fluid">
                 <div class="row">
                   <h3>Пакет "Стрит Лайт"</h3>
-                  <div class="photo-1 pricing-plan photo col-sm-12 col-lg-12">
-                    <div class="col-sm-12 col-md-8 col-lg-8">
+                  <div class="photo-1 pricing-plan photo col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="pricing-content">
+                    <div class="options-full col-xs-12 col-sm-12 col-md-8 col-lg-8">
                     <ul id="options-1">
                      <li><div class="square"><div class="digit">2</div></div><div class="text">2 ч фотосессии</div></li>
                      <li><div class="square"><div class="digit">10</div></div><div class="text"> авторская профессиональная ретушь 10 фотографий</div></li>
@@ -37,47 +37,16 @@
                      <li><div class="text">помощь в выборе места съемки и образов</div></li>
                     </ul>
                     </div>
-                    <div class="col-sm-12 col-md-4 col-lg-4">
-                    <div id="portlet-content-1" class="portlet-content">
-                      <div class="callback">
-                        <form id="order-form" action="/site/order" method="post">
-                          <div class="panel panel-default">
-                            <div class="panel-heading">
-                              <h3 class="panel-title">Заказать фотосессию</h3>
-                            </div>
-                            <div class="panel-body">
-                              <div class="form-group">
-                                <label for="phone_owner">Телефон</label>
-                                <input class="form-control" name="OrderForm[phone]" id="OrderForm_phone" type="text">
-                                <div class="errorMessage" id="OrderForm_phone_em_" style="display: none;"></div>
-                              </div>
-                              <div class="form-group">
-                                <label for="name_owner">Ваше имя</label>
-                                <input class="form-control" name="OrderForm[name]" id="OrderForm_name" type="text">
-                                <div class="errorMessage" id="OrderForm_name_em_" style="display: none;"></div>
-                              </div>
-                              <div class="form-group">
-                                <label for="question">Дополнительная информация</label>
-                                <textarea class="form-control" name="OrderForm[text]" id="OrderForm_text" type="text"></textarea>
-                                <div class="errorMessage" id="OrderForm_text_em_" style="display: none;"></div>
-                              </div>
-                            </div>
-                            <input value="callback" name="OrderForm[type]" id="OrderForm_type" type="hidden"> 
-                            <div class="panel-footer">
-                              <button type="submit" class="btn btn-default">Заказать</button>
-                            </div>
-                          </div>
-                        </form>
-                      </div>
-                    </div></div>
-                    <div class="order col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="order col-xs-12 col-sm-12 col-md-4 col-lg-4">
                     <h4 class="price text">7000 руб</h4>
-                    <a href="#portlet-content-1" class="btn btn-default">Заказать фотосессию</a>
-                    <a href="#portlet-content-1" class="btn btn-default">Заказать сертификат</a></div>
+                    <a href="#orderForm" id="order" class="btn btn-default" data-toggle="modal">Заказать фотосессию</a>
+                    <a href="#orderForm" class="btn btn-default" data-toggle="modal">Заказать сертификат</a></div>
+                    </div><!--pricing-content-->
                   </div><!--pricing_plan-->
                   <h3>Пакет "Стрит Погружение"</h3>
-                  <div class="photo-2 pricing-plan photo col-sm-12 col-lg-12">
-                    <div class="col-sm-12 col-md-8 col-lg-8">
+                  <div class="photo-2 pricing-plan photo col-xs-12 col-sm-12 col-lg-12">
+                    <div class="pricing-content">
+                    <div class="options-full col-xs-12 col-sm-12 col-md-8 col-lg-8">
                     <ul id="options-2" >
                      <li><div class="square"><div class="digit">4</div></div><div class="text">4 ч фотосессии</div></li>
                      <li><div class="square"><div class="digit">15</div></div><div class="text">авторская профессиональная ретушь 15 фотографий</div></li>
@@ -89,43 +58,11 @@
                      <li><div class="text">помощь в выборе места съемки и образов</div></li>
                     </ul>
                     </div>
-                    <div class="col-sm-12 col-md-4 col-lg-4">
-                    <div id="portlet-content-2" class="portlet-content">
-                      <div class="callback">
-                        <form id="order-form" action="/site/order" method="post">
-                          <div class="panel panel-default">
-                            <div class="panel-heading">
-                              <h3 class="panel-title">Заказать фотосессию</h3>
-                            </div>
-                            <div class="panel-body">
-                              <div class="form-group">
-                                <label for="phone_owner">Телефон</label>
-                                <input class="form-control" name="OrderForm[phone]" id="OrderForm_phone" type="text">
-                                <div class="errorMessage" id="OrderForm_phone_em_" style="display: none;"></div>
-                              </div>
-                              <div class="form-group">
-                                <label for="name_owner">Ваше имя</label>
-                                <input class="form-control" name="OrderForm[name]" id="OrderForm_name" type="text">
-                                <div class="errorMessage" id="OrderForm_name_em_" style="display: none;"></div>
-                              </div>
-                              <div class="form-group">
-                                <label for="question">Дополнительная информация</label>
-                                <textarea class="form-control" name="OrderForm[text]" id="OrderForm_text" type="text"></textarea>
-                                <div class="errorMessage" id="OrderForm_text_em_" style="display: none;"></div>
-                              </div>
-                            </div>
-                            <input value="callback" name="OrderForm[type]" id="OrderForm_type" type="hidden"> 
-                            <div class="panel-footer">
-                              <button type="submit" class="btn btn-default">Заказать</button>
-                            </div>
-                          </div>
-                        </form>
-                      </div>
-                    </div></div>
-                    <div class="order col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="order col-xs-12 col-sm-12 col-md-4 col-lg-4">
                     <h4 class="price text">10000 руб</h4>
-                    <a href="#portlet-content-2" class="btn btn-default">Заказать фотосессию</a>
-                    <a href="#portlet-content-2" class="btn btn-default">Заказать сертификат</a></div>
+                    <a href="#orderForm" class="btn btn-default" data-toggle="modal">Заказать фотосессию</a>
+                    <a href="#orderForm" class="btn btn-default" data-toggle="modal">Заказать сертификат</a></div>
+                    </div><!--pricing-content-->
                   </div><!--pricing_plan-->
                </div>
                </div><!--container-fluid-->
@@ -133,8 +70,9 @@
               <div class="container-fluid">
                 <div class="row">
                   <h3>Пакет "Студио Эконом"</h3>
-                  <div class="photo-3 pricing-plan photo col-sm-12 col-lg-12">
-                    <div class="col-sm-12 col-md-8 col-lg-8">
+                  <div class="photo-3 pricing-plan photo col-xs-12 col-sm-12 col-lg-12">
+                    <div class="pricing-content">
+                    <div class="options-full col-xs-12 col-sm-12 col-md-8 col-lg-8">
                     <ul id="options-3">
                      <li><div class="square"><div class="digit">1</div></div><div class="text">1 ч фотосессии</div></li>
                      <li><div class="square"><div class="digit">5</div></div><div class="text">авторская профессиональная ретушь 5 фотографий</div></li>
@@ -145,47 +83,16 @@
                      <li><div class="text">помощь в выборе образа</div></li>
                     </ul>
                     </div>
-                    <div class="col-sm-12 col-md-4 col-lg-4">
-                    <div id="portlet-content-3" class="portlet-content">
-                      <div class="callback">
-                        <form id="order-form" action="/site/order" method="post">
-                          <div class="panel panel-default">
-                            <div class="panel-heading">
-                              <h3 class="panel-title">Заказать фотосессию</h3>
-                            </div>
-                            <div class="panel-body">
-                              <div class="form-group">
-                                <label for="phone_owner">Телефон</label>
-                                <input class="form-control" name="OrderForm[phone]" id="OrderForm_phone" type="text">
-                                <div class="errorMessage" id="OrderForm_phone_em_" style="display: none;"></div>
-                              </div>
-                              <div class="form-group">
-                                <label for="name_owner">Ваше имя</label>
-                                <input class="form-control" name="OrderForm[name]" id="OrderForm_name" type="text">
-                                <div class="errorMessage" id="OrderForm_name_em_" style="display: none;"></div>
-                              </div>
-                              <div class="form-group">
-                                <label for="question">Дополнительная информация</label>
-                                <textarea class="form-control" name="OrderForm[text]" id="OrderForm_text" type="text"></textarea>
-                                <div class="errorMessage" id="OrderForm_text_em_" style="display: none;"></div>
-                              </div>
-                            </div>
-                            <input value="callback" name="OrderForm[type]" id="OrderForm_type" type="hidden"> 
-                            <div class="panel-footer">
-                              <button type="submit" class="btn btn-default">Заказать</button>
-                            </div>
-                          </div>
-                        </form>
-                      </div>
-                    </div></div>
-                    <div class="order col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="order col-xs-12 col-sm-12 col-md-4 col-lg-4">
                     <h4 class="price text">6000 руб</h4>
-                    <a href="#portlet-content-3" class="btn btn-default">Заказать фотосессию</a>
-                    <a href="#portlet-content-3" class="btn btn-default">Заказать сертификат</a></div>
+                    <a href="#orderForm" class="btn btn-default" data-toggle="modal">Заказать фотосессию</a>
+                    <a href="#orderForm" class="btn btn-default" data-toggle="modal">Заказать сертификат</a></div>
+                    </div><!--pricing-content-->
                   </div><!--pricing_plan-->
-                  <div class="photo-4 pricing-plan photo col-sm-12 col-lg-12">
-                    <h3>Пакет "Студио Мини"</h3>
-                    <div class="col-sm-12 col-md-8 col-lg-8">
+                  <h3>Пакет "Студио Мини"</h3>
+                  <div class="photo-4 pricing-plan photo col-xs-12 col-sm-12 col-lg-12">
+                    <div class="pricing-content">
+                    <div class="options-full col-xs-12 col-sm-12 col-md-8 col-lg-8">
                     <ul id="options-4">
                      <li><div class="square"><div class="digit">2</div></div><div class="text">2 ч фотосессии</div></li>
                      <li><div class="square"><div class="digit">10</div></div><div class="text">авторская профессиональная ретушь 10 фотографий</div></li>
@@ -199,47 +106,16 @@
                      <li><div class="text">предварительное обсуждение идей</div></li>
                     </ul>
                     </div>
-                    <div class="col-sm-12 col-md-4 col-lg-4">
-                    <div id="portlet-content-4" class="portlet-content">
-                      <div class="callback">
-                        <form id="order-form" action="/site/order" method="post">
-                          <div class="panel panel-default">
-                            <div class="panel-heading">
-                              <h3 class="panel-title">Заказать фотосессию</h3>
-                            </div>
-                            <div class="panel-body">
-                              <div class="form-group">
-                                <label for="phone_owner">Телефон</label>
-                                <input class="form-control" name="OrderForm[phone]" id="OrderForm_phone" type="text">
-                                <div class="errorMessage" id="OrderForm_phone_em_" style="display: none;"></div>
-                              </div>
-                              <div class="form-group">
-                                <label for="name_owner">Ваше имя</label>
-                                <input class="form-control" name="OrderForm[name]" id="OrderForm_name" type="text">
-                                <div class="errorMessage" id="OrderForm_name_em_" style="display: none;"></div>
-                              </div>
-                              <div class="form-group">
-                                <label for="question">Дополнительная информация</label>
-                                <textarea class="form-control" name="OrderForm[text]" id="OrderForm_text" type="text"></textarea>
-                                <div class="errorMessage" id="OrderForm_text_em_" style="display: none;"></div>
-                              </div>
-                            </div>
-                            <input value="callback" name="OrderForm[type]" id="OrderForm_type" type="hidden"> 
-                            <div class="panel-footer">
-                              <button type="submit" class="btn btn-default">Заказать</button>
-                            </div>
-                          </div>
-                        </form>
-                      </div>
-                    </div></div>
-                    <div class="order col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="order col-xs-12 col-sm-12 col-md-4 col-lg-4">
                     <h4 class="price text">12000 руб</h4>
-                    <a href="#portlet-content-4" class="btn btn-default">Заказать фотосессию</a>
-                    <a href="#portlet-content-4" class="btn btn-default">Заказать сертификат</a></div>
+                    <a href="#orderForm" class="btn btn-default" data-toggle="modal">Заказать фотосессию</a>
+                    <a href="#orderForm" class="btn btn-default" data-toggle="modal">Заказать сертификат</a></div>
+                    </div><!--pricing-content-->
                   </div><!--pricing_plan-->
-                  <div class="photo-5 pricing-plan photo col-sm-12 col-lg-12">
-                    <h3>Пакет "Студио Стандарт"</h3>
-                    <div class="col-sm-12 col-md-8 col-lg-8">
+                  <h3>Пакет "Студио Стандарт"</h3>
+                  <div class="photo-5 pricing-plan photo col-xs-12 col-sm-12 col-lg-12">
+                    <div class="pricing-content">
+                    <div class="options-full col-xs-12 col-sm-12 col-md-8 col-lg-8">
                     <ul id="options-5">
                      <li><div class="square"><div class="digit">3</div></div><div class="text">3 ч фотосессии</div></li>
                      <li><div class="square"><div class="digit">15</div></div><div class="text">авторская профессиональная ретушь 15 фотографий</div></li>
@@ -253,47 +129,16 @@
                      <li><div class="text">предварительное обсуждение идей</div></li>
                     </ul>
                     </div>
-                    <div class="col-sm-12 col-md-4 col-lg-4">
-                    <div id="portlet-content-5" class="portlet-content">
-                      <div class="callback">
-                        <form id="order-form" action="/site/order" method="post">
-                          <div class="panel panel-default">
-                            <div class="panel-heading">
-                              <h3 class="panel-title">Заказать фотосессию</h3>
-                            </div>
-                            <div class="panel-body">
-                              <div class="form-group">
-                                <label for="phone_owner">Телефон</label>
-                                <input class="form-control" name="OrderForm[phone]" id="OrderForm_phone" type="text">
-                                <div class="errorMessage" id="OrderForm_phone_em_" style="display: none;"></div>
-                              </div>
-                              <div class="form-group">
-                                <label for="name_owner">Ваше имя</label>
-                                <input class="form-control" name="OrderForm[name]" id="OrderForm_name" type="text">
-                                <div class="errorMessage" id="OrderForm_name_em_" style="display: none;"></div>
-                              </div>
-                              <div class="form-group">
-                                <label for="question">Дополнительная информация</label>
-                                <textarea class="form-control" name="OrderForm[text]" id="OrderForm_text" type="text"></textarea>
-                                <div class="errorMessage" id="OrderForm_text_em_" style="display: none;"></div>
-                              </div>
-                            </div>
-                            <input value="callback" name="OrderForm[type]" id="OrderForm_type" type="hidden"> 
-                            <div class="panel-footer">
-                              <button type="submit" class="btn btn-default">Заказать</button>
-                            </div>
-                          </div>
-                        </form>
-                      </div>
-                    </div></div>
-                    <div class="order col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="order col-xs-12 col-sm-12 col-md-4 col-lg-4">
                     <h4 class="price text">18000 руб</h4>
-                    <a href="#portlet-content-5" class="btn btn-default">Заказать фотосессию</a>
-                    <a href="#portlet-content-5" class="btn btn-default">Заказать сертификат</a></div>
+                    <a href="#orderForm" class="btn btn-default" data-toggle="modal">Заказать фотосессию</a>
+                    <a href="#orderForm" class="btn btn-default" data-toggle="modal">Заказать сертификат</a></div>
+                    </div>
                   </div><!--pricing_plan-->
-                  <div class="photo-6 pricing-plan photo col-sm-12 col-lg-12">
-                    <h3>Пакет "Студио Макси"</h3>
-                    <div class="col-sm-12 col-md-8 col-lg-8">
+                  <h3>Пакет "Студио Макси"</h3>
+                  <div class="photo-6 pricing-plan photo col-xs-12 col-sm-12 col-lg-12">
+                    <div class="pricing-content">
+                    <div class="options-full col-xs-12 col-sm-12 col-md-8 col-lg-8">
                     <ul id="options-6">
                      <li><div class="square"><div class="digit">4</div></div><div class="text">4 ч фотосессии</div></li>
                      <li><div class="square"><div class="digit">20</div></div><div class="text">авторская профессиональная ретушь 20 фотографий</div></li>
@@ -308,52 +153,21 @@
                      <li><div class="text">помощь в выборе студии</div></li>
                      <li><div class="text">личная предварительная встреча для обсуждения идей</div></li>
                     </ul></div>
-                    <div class="col-sm-12 col-md-4 col-lg-4">
-                    <div id="portlet-content-6" class="portlet-content">
-                      <div class="callback">
-                        <form id="order-form" action="/site/order" method="post">
-                          <div class="panel panel-default">
-                            <div class="panel-heading">
-                              <h3 class="panel-title">Заказать фотосессию</h3>
-                            </div>
-                            <div class="panel-body">
-                              <div class="form-group">
-                                <label for="phone_owner">Телефон</label>
-                                <input class="form-control" name="OrderForm[phone]" id="OrderForm_phone" type="text">
-                                <div class="errorMessage" id="OrderForm_phone_em_" style="display: none;"></div>
-                              </div>
-                              <div class="form-group">
-                                <label for="name_owner">Ваше имя</label>
-                                <input class="form-control" name="OrderForm[name]" id="OrderForm_name" type="text">
-                                <div class="errorMessage" id="OrderForm_name_em_" style="display: none;"></div>
-                              </div>
-                              <div class="form-group">
-                                <label for="question">Дополнительная информация</label>
-                                <textarea class="form-control" name="OrderForm[text]" id="OrderForm_text" type="text"></textarea>
-                                <div class="errorMessage" id="OrderForm_text_em_" style="display: none;"></div>
-                              </div>
-                            </div>
-                            <input value="callback" name="OrderForm[type]" id="OrderForm_type" type="hidden"> 
-                            <div class="panel-footer">
-                              <button type="submit" class="btn btn-default">Заказать</button>
-                            </div>
-                          </div>
-                        </form>
-                      </div>
-                    </div></div>
-                    <div class="order col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="order col-xs-12 col-sm-12 col-md-4 col-lg-4">
                     <h4 class="price text">25000 руб</h4>
-                    <a href="#portlet-content-6" class="btn btn-default">Заказать фотосессию</a>
-                    <a href="#portlet-content-6" class="btn btn-default">Заказать сертификат</a></div>
+                    <a href="#orderForm" class="btn btn-default" data-toggle="modal">Заказать фотосессию</a>
+                    <a href="#orderForm" class="btn btn-default" data-toggle="modal">Заказать сертификат</a></div>
+                    </div><!--pricing-content-->
                   </div><!--pricing_plan-->
                </div>
                </div><!--container-fluid-->
               <h2>Свадебная фотосессия</h2>
               <div class="container-fluid">
                 <div class="row">
-                  <div class="photo-7 pricing-plan photo col-sm-12 col-lg-12">
-                    <h3>Пакет "Минимальный"</h3>
-                    <div class="col-sm-12 col-md-8 col-lg-8">
+                  <h3>Пакет "Минимальный"</h3>
+                  <div class="photo-7 pricing-plan photo col-xs-12 col-sm-12 col-lg-12">
+                    <div class="pricing-content">
+                    <div class="options-full col-xs-12 col-sm-12 col-md-8 col-lg-8">
                     <ul id="options-7">
                      <li><div class="square"><div class="digit">3</div></div><div class="text">до 3 ч фотосессии</div></li>
                      <li><div class="square"><div class="digit">10</div></div><div class="text">авторская обработка 10 фотографий до журнального уровня</div></li>
@@ -362,157 +176,105 @@
                      <ul class="options">
                      <li><div class="text">индивидуально оформленная упаковка для DVD</div></li>
                     </ul></div>
-                    <div class="col-sm-12 col-md-4 col-lg-4">
-                    <div id="portlet-content-7" class="portlet-content">
-                      <div class="callback">
-                        <form id="order-form" action="/site/order" method="post">
-                          <div class="panel panel-default">
-                            <div class="panel-heading">
-                              <h3 class="panel-title">Заказать фотосессию</h3>
-                            </div>
-                            <div class="panel-body">
-                              <div class="form-group">
-                                <label for="phone_owner">Телефон</label>
-                                <input class="form-control" name="OrderForm[phone]" id="OrderForm_phone" type="text">
-                                <div class="errorMessage" id="OrderForm_phone_em_" style="display: none;"></div>
-                              </div>
-                              <div class="form-group">
-                                <label for="name_owner">Ваше имя</label>
-                                <input class="form-control" name="OrderForm[name]" id="OrderForm_name" type="text">
-                                <div class="errorMessage" id="OrderForm_name_em_" style="display: none;"></div>
-                              </div>
-                              <div class="form-group">
-                                <label for="question">Дополнительная информация</label>
-                                <textarea class="form-control" name="OrderForm[text]" id="OrderForm_text" type="text"></textarea>
-                                <div class="errorMessage" id="OrderForm_text_em_" style="display: none;"></div>
-                              </div>
-                            </div>
-                            <input value="callback" name="OrderForm[type]" id="OrderForm_type" type="hidden"> 
-                            <div class="panel-footer">
-                              <button type="submit" class="btn btn-default">Заказать</button>
-                            </div>
-                          </div>
-                        </form>
-                      </div>
-                    </div></div>
-                    <div class="order col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="order col-xs-12 col-sm-12 col-md-4 col-lg-4">
                     <h4 class="price text">10000 руб</h4>
-                    <a href="#portlet-content-7" class="btn btn-default">Заказать фотосессию</a>
-                    <a href="#portlet-content-7" class="btn btn-default">Заказать сертификат</a></div>
+                    <a href="#orderForm" class="btn btn-default" data-toggle="modal">Заказать фотосессию</a>
+                    <a href="#orderForm" class="btn btn-default" data-toggle="modal">Заказать сертификат</a></div>
+                    </div><!--pricing-content-->
                   </div><!--pricing_plan-->
-                  <div class="photo-8 pricing-plan photo col-sm-12 col-lg-12">
-                    <h3>Пакет "Стандартный"</h3>
-                    <div class="col-sm-12 col-md-8 col-lg-8">
+                  <h3>Пакет "Стандартный"</h3>
+                  <div class="photo-8 pricing-plan photo col-xs-12 col-sm-12 col-lg-12">
+                    <div class="pricing-content">
+                    <div class="options-full col-xs-12 col-sm-12 col-md-8 col-lg-8">
                     <ul id="options-8">
                      <li><div class="square"><div class="digit">6</div></div><div class="text">до 6 ч фотосессии</div></li>
                      <li><div class="square"><span class="digit">15</span></div><div class="text">авторская обработка 15 фотографий до журнального уровня</div></li>
                      <li><div class="square"><div class="digit">350</div></div><div class="text">от 350 художественно обработанных фотографий на DVD</div></li>
                      </ul>
-                     <ul class="options">
+                    <ul class="options">
                      <li><div class="text">индивидуально оформленная упаковка для DVD</div></li>
                     </ul></div>
-                    <div class="col-sm-12 col-md-4 col-lg-4">
-                    <div id="portlet-content-8" class="portlet-content">
-                      <div class="callback">
-                        <form id="order-form" action="/site/order" method="post">
-                          <div class="panel panel-default">
-                            <div class="panel-heading">
-                              <h3 class="panel-title">Заказать фотосессию</h3>
-                            </div>
-                            <div class="panel-body">
-                              <div class="form-group">
-                                <label for="phone_owner">Телефон</label>
-                                <input class="form-control" name="OrderForm[phone]" id="OrderForm_phone" type="text">
-                                <div class="errorMessage" id="OrderForm_phone_em_" style="display: none;"></div>
-                              </div>
-                              <div class="form-group">
-                                <label for="name_owner">Ваше имя</label>
-                                <input class="form-control" name="OrderForm[name]" id="OrderForm_name" type="text">
-                                <div class="errorMessage" id="OrderForm_name_em_" style="display: none;"></div>
-                              </div>
-                              <div class="form-group">
-                                <label for="question">Дополнительная информация</label>
-                                <textarea class="form-control" name="OrderForm[text]" id="OrderForm_text" type="text"></textarea>
-                                <div class="errorMessage" id="OrderForm_text_em_" style="display: none;"></div>
-                              </div>
-                            </div>
-                            <input value="callback" name="OrderForm[type]" id="OrderForm_type" type="hidden"> 
-                            <div class="panel-footer">
-                              <button type="submit" class="btn btn-default">Заказать</button>
-                            </div>
-                          </div>
-                        </form>
-                      </div>
-                    </div></div>
-                    <div class="order col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="order col-xs-12 col-sm-12 col-md-4 col-lg-4">
                     <h4 class="price text">15000 руб</h4>
-                    <a href="#portlet-content-8" class="btn btn-default">Заказать фотосессию</a>
-                    <a href="#portlet-content-8" class="btn btn-default">Заказать сертификат</a></div>
+                    <a href="#orderForm" class="btn btn-default" data-toggle="modal">Заказать фотосессию</a>
+                    <a href="#orderForm" class="btn btn-default" data-toggle="modal">Заказать сертификат</a></div>
+                    </div><!--pricing-content-->
                   </div><!--pricing_plan-->
-                  <div class="photo-9 pricing-plan photo col-sm-12 col-lg-12">
-                    <h3>Пакет "Полный день"</h3>
-                    <div class="col-sm-12 col-md-8 col-lg-8">
+                  <h3>Пакет "Полный день"</h3>
+                  <div class="photo-9 pricing-plan photo col-xs-12 col-sm-12 col-lg-12">
+                    <div class="pricing-content">
+                    <div class="options-full col-xs-12 col-sm-12 col-md-8 col-lg-8">
                     <ul id="options-9">
                      <li><div class="square"><div class="digit">10</div></div><div class="text">до 10 ч фотосессии</div></li>
                      <li><div class="square"><div class="digit">25</div></div><div class="text">авторская обработка 25 фотографий до журнального уровня</div></li>
                      <li><div class="square"><div class="digit">500</div></div><div class="text">от 500 художественно обработанных фотографий на DVD</div></li>
                      </ul>
-                     <ul class="options">
+                    <ul class="options">
                      <li><div class="text">полный день бронируется при предварительной предоплате 50%</div></li>
                      <li><div class="text">дополнительное время съемки будет стоить 3000 руб/ч</div></li>
                      <li><div class="text">фотографии готовятся в течение месяца, экспресс-подготовка будет стоить 50% от съемки</div></li>
                      <li><div class="text">у нас Вы можете заказать фотокнигу с свадебной фотосессией, стоимость - 5000 руб.</div></li>
                     </ul></div>
-                    <div class="col-sm-12 col-md-12 col-lg-12">
-                    <div id="portlet-content-9" class="portlet-content">
-                      <div class="callback">
-                        <form id="order-form" action="/site/order" method="post">
-                          <div class="panel panel-default">
-                            <div class="panel-heading">
-                              <h3 class="panel-title">Заказать фотосессию</h3>
-                            </div>
-                            <div class="panel-body">
-                              <div class="form-group">
-                                <label for="phone_owner">Телефон</label>
-                                <input class="form-control" name="OrderForm[phone]" id="OrderForm_phone" type="text">
-                                <div class="errorMessage" id="OrderForm_phone_em_" style="display: none;"></div>
-                              </div>
-                              <div class="form-group">
-                                <label for="name_owner">Ваше имя</label>
-                                <input class="form-control" name="OrderForm[name]" id="OrderForm_name" type="text">
-                                <div class="errorMessage" id="OrderForm_name_em_" style="display: none;"></div>
-                              </div>
-                              <div class="form-group">
-                                <label for="question">Дополнительная информация</label>
-                                <textarea class="form-control" name="OrderForm[text]" id="OrderForm_text" type="text"></textarea>
-                                <div class="errorMessage" id="OrderForm_text_em_" style="display: none;"></div>
-                              </div>
-                            </div>
-                            <input value="callback" name="OrderForm[type]" id="OrderForm_type" type="hidden"> 
-                            <div class="panel-footer">
-                              <button type="submit" class="btn btn-default">Заказать</button>
-                            </div>
-                          </div>
-                        </form>
-                      </div>
-                    </div></div>
-                    <div class="order col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="order col-xs-12 col-sm-12 col-md-4 col-lg-4">
                     <h4 class="price text">25000 руб</h4>
-                    <a href="#portlet-content-9" class="btn btn-default">Заказать фотосессию</a>
-                    <a href="#portlet-content-9" class="btn btn-default">Заказать сертификат</a></div>
+                    <a href="#orderForm" class="btn btn-default" data-toggle="modal">Заказать фотосессию</a>
+                    <a href="#orderForm" class="btn btn-default" data-toggle="modal">Заказать сертификат</a></div>
+                    </div><!--pricing-content-->
                   </div><!--pricing_plan-->
                </div>
                </div><!--container-fluid-->
             </div><!--content-->
           </div>
+
         </div><!--row-->
       </div><!--container-->
     </div><!--main-->
+
+
+ <!--order form-->
+             <!-- Modal -->
+            <div id="orderForm" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="portlet-content">
+                    <div class="callback">
+                        <div class="modal-header">
+                          <h3 class="panel-title">Заказать фотосессию</h3>
+                        </div>
+                      <!--Form-->
+                        <div class="modal-body">
+                        <form id="order-form" action="/site/order" method="post">
+                        <div class="form-group">
+                          <label for="phone_owner">Телефон</label>
+                          <input class="form-control" name="OrderForm[phone]" id="OrderForm_phone" type="text">
+                          <div class="errorMessage" id="OrderForm_phone_em_" style="display: none;"></div>
+                        </div>
+                        <div class="form-group">
+                          <label for="name_owner">Ваше имя</label>
+                          <input class="form-control" name="OrderForm[name]" id="OrderForm_name" type="text">
+                          <div class="errorMessage" id="OrderForm_name_em_" style="display: none;"></div>
+                        </div>
+                        <div class="form-group">
+                          <label for="question">Дополнительная информация</label>
+                          <textarea class="form-control" name="OrderForm[text]" id="OrderForm_text" type="text"></textarea>
+                          <div class="errorMessage" id="OrderForm_text_em_" style="display: none;"></div>
+                        </div>
+                        </form>
+                        </div><!--modal-body-->
+                        <input value="callback" name="OrderForm[type]" id="OrderForm_type" type="hidden"> 
+                        <div class="modal-footer">
+                        <button type="submit" class="btn btn-default">Заказать</button>
+                        </div>
+                    </div><!--callback-->
+                  </div><!--portlet-content-->
+              </div><!--modal-content-->
+            </div><!--modal-dialog-->
+            </div><!--myModal-->
 
     <!-- Libs -->
   <script src="js/jquery-3.1.0.min.js"></script>
   <script src="js/jquery-2.1.4.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script src="js/bootstrap.js"></script>
+  <script src="js/script.js>
 </body>
 </html>

@@ -3,7 +3,7 @@ body {
   font: bold 12px 'PT Mono';
 }
 h2 {
-  font-size: .9vw;
+  font-size: 1vw;
   font-weight: bold;
   color: #000;
   text-transform: uppercase;
@@ -12,10 +12,11 @@ h2 {
 section {
   padding: 1%;
 }
-
+.col-md-3 {
+  padding: 0 !important;
+}
 .navbar-nav a {
   text-decoration: none;
-  /*padding: 15% 20% !important;*/
 }
 .container {
   position: relative;
@@ -49,6 +50,10 @@ nav .container {
   background-color: #122ded;
   margin: 0;
 }
+#modal-nav ul button:focus, #modal-nav ul button:active {
+   outline: none !important;
+}
+
 #modal-nav #nav-list {
   width: 50%;
   padding: 2%;
@@ -385,20 +390,39 @@ section#subscription {
 /* END FOOTER */
 /********** Medium devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
-  
+  .menu-main h2 {
+    font-size: 1.3vw;
+  } 
+  .date, .object {
+  font-size: 1.1vw;
+  }
+  .title {
+  font-size: 2vw;
+  }
 }
-
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
  /* Home Page */
 .date, .object {
   font-size: 2vw;
-}
-.menu-right {
-  padding: 0 25%;
-}
-.menu-right h2, .title {
+ }
+.menu-main h2 {
+    font-size: 2vw;
+  } 
+.title {
  font-size: 3vw;
+ }
+.logo-img {
+  margin: 0 30%;
+}
+.right {
+  clear: both;
+}
+.menu-main li {
+  margin: 2% 6%;
+}
+.col-sm-1, .col-sm-5 {
+  padding: 0 !important;
 }
 }
  
@@ -408,17 +432,26 @@ section#subscription {
 .date, .object {
   font-size: 2vw;
 }
-.menu-right {
-  padding: 0 25%;
-}
-.menu-right h2, .title {
- font-size: 3vw;
-}
 .title {
+  font-size: 3vw;
   line-height: 1.5;
   padding: 2%;
 }
- 
+.interni-logo {
+  margin: 2% 15%;
+} 
+.object-logo {
+  margin: 2% 10%;
+} 
+.menu-main h2 {
+  font-size: 4vw;
+} 
+.menu-main li {
+  margin: 1% 8%;
+} 
+.col-sm-1, .col-sm-5 {
+  padding: 0 !important;
+}
   /* Footer */
   .panel-footer section {
     margin-bottom: 30px;
@@ -430,16 +463,14 @@ section#subscription {
   .panel-footer section hr {
     width: 50%;
   }
+
   /* End Footer */
 }
 
 /********** Super extra small devices Only (e.g., iPhone 4) **********/
 @media (max-width: 479px) {
   /* Home Page */
-.menu-right {
-  padding: 0 20%;
-  font-size: 3vw;
-}
+
 .date, .object {
   font-size: 3vw;
 }
@@ -451,11 +482,14 @@ section#subscription {
   bottom: 3%;
  }
 .logo-img {
-  margin: 9%;
+  margin: 0 30%;
 }
 .interni-logo, .object-logo {
   margin: 2%;
   margin-left: 9%;
 } 
-}
+.interni-logo, .object-logo {
+  margin: 2% 10%;
+} 
+
   

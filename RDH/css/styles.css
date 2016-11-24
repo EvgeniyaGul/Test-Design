@@ -45,7 +45,7 @@ nav .container {
 }
 /** Modal Nav **/
 .modal {
-  left: -25%;
+  margin-left: 0;
 }
 #modal-nav ul {
   float: left;
@@ -281,8 +281,9 @@ nav .container {
   line-height: 1.5;
 }
 .classic-text a {
-  margin-top: 10%;
+  margin-top: 5%;
 }
+
 .gallery a {
   margin-left: 5%;
 }
@@ -332,6 +333,9 @@ section#subscription {
 .subs input {
   font-size: 14px;
   line-height: 2.7;
+}
+.subs li:first-child {
+  float: left;
 }
 #subscribe-input {
    float: left;
@@ -407,6 +411,8 @@ section#subscription {
 /* END FOOTER */
 /********** Medium devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
+
+}
   
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
@@ -428,6 +434,9 @@ section#subscription {
 }
 .col-sm-1, .col-sm-5 {
   padding: 0 !important;
+}
+.classic-text {
+  margin-left: 5%;
 }
 }
  
@@ -456,6 +465,9 @@ section#subscription {
 } 
 .col-sm-1, .col-sm-5 {
   padding: 0 !important;
+}
+.classic-text {
+  margin-left: 5%;
 }
   /* Footer */
   .panel-footer section {

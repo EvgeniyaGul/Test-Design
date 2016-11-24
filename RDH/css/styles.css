@@ -3,7 +3,7 @@ body {
   font: bold 12px 'PT Mono';
 }
 h2 {
-  font-size: 1vw;
+  font-size: 18px;
   font-weight: bold;
   color: #000;
   text-transform: uppercase;
@@ -44,6 +44,9 @@ nav .container {
   position:relative;
 }
 /** Modal Nav **/
+.modal {
+  left: -25%;
+}
 #modal-nav ul {
   float: left;
   color: #fff;
@@ -135,6 +138,9 @@ nav .container {
   width: 100%;
   height: 100%;
 }
+.menu-main h2 {
+  font-size: 14px;
+}
 .navbar-header .navbar-left {
   width: 100%;
 }
@@ -216,7 +222,7 @@ nav .container {
   bottom:45px;
   width:90%;
   background:#fff;
-  font-size: 30px;
+  font-size: 26px;
   line-height:32px;
   padding:25px;
   text-align:center;
@@ -225,7 +231,7 @@ nav .container {
   position:absolute;
   top: 1%;
   background:#fff;
-  font-size: .8vw;
+  font-size: 12px;
   line-height:32px;
   padding: 1%;
   text-align:center;
@@ -241,7 +247,7 @@ nav .container {
   position: relative;
   float: left;
   background:#fff;
-  font-size: 1.1vw;
+  font-size: 18px;
   line-height: 1.5;
   text-align: left;
 }
@@ -263,6 +269,7 @@ nav .container {
 }
 #classic .container, #classic h2 {
   color: #fff;
+  font-size: 24px;
   background-color: #122ded;
 }
 #classic img {
@@ -270,7 +277,7 @@ nav .container {
 }
 #classic span, #subscription span {
   display: inline-block;
-  font-size: .8vw; 
+  font-size: 16px; 
   line-height: 1.5;
 }
 .classic-text a {
@@ -288,6 +295,7 @@ nav .container {
 }
 #posts .btn, #download .btn, #subscribe .btn {
   text-transform: uppercase;
+  text-decoration: none;
   font-weight: bold;
   border: 3px solid;
   border-bottom: 5px solid; 
@@ -311,6 +319,7 @@ section#subscription {
 }
 .subs h2 {
   color: #fff;
+  font-size: 25px;
 }
 .subs .btn {
   width: 10%;
@@ -320,7 +329,11 @@ section#subscription {
   border: none;
   border-radius: 0;
 }
-.subscribe-input {
+.subs input {
+  font-size: 14px;
+  line-height: 2.7;
+}
+#subscribe-input {
    float: left;
    border: none;
    background: #ffffff !important; 
@@ -330,6 +343,9 @@ section#subscription {
    padding: 2%;
    color: #000;
    font-size: 1vw; 
+}
+#subscribe h2 {
+  text-transform: none;
 }
 #download ul, #subscribe {
   text-align: center;
@@ -344,6 +360,7 @@ section#subscription {
 }
 #download span {
   clear: both;
+  font-size: 15px;
 }
 #subscribe .post-object {
   margin: 3% 25%;
@@ -372,7 +389,7 @@ section#subscription {
 .panel-footer button, .dropdown-menu, .dropdown-menu>li>a {
   background-color: #000000;
   color: #eeeeee;
-  font-size: 1em;
+  font-size: 18px;
   margin-right: 5%;
   border: none;
   opacity: 0.9;
@@ -390,22 +407,10 @@ section#subscription {
 /* END FOOTER */
 /********** Medium devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
-  .menu-main h2 {
-    font-size: 1.3vw;
-  } 
-  .date, .object {
-  font-size: 1.1vw;
-  }
-  .title {
-  font-size: 2vw;
-  }
-}
+  
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
  /* Home Page */
-.date, .object {
-  font-size: 2vw;
- }
 .menu-main h2 {
     font-size: 2vw;
   } 
@@ -445,7 +450,7 @@ section#subscription {
 } 
 .menu-main h2 {
   font-size: 4vw;
-} 
+}
 .menu-main li {
   margin: 1% 8%;
 } 
@@ -463,7 +468,6 @@ section#subscription {
   .panel-footer section hr {
     width: 50%;
   }
-
   /* End Footer */
 }
 

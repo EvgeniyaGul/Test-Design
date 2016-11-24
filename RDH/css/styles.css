@@ -158,7 +158,7 @@ nav .container {
 .object-logo {
   position: relative;
   float: left;
-  background: url('../img/object-arrow.png');
+  background-image: url('../img/object-arrow.png');
   color: #000;
   background-size: cover;
   background-position: 100% 0%;

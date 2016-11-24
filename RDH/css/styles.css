@@ -250,7 +250,7 @@ nav .container {
 #classic img {
   margin: 5%;
 }
-#classic span, .subscription span {
+#classic span, #subscription span {
   display: inline-block;
   font-size: .8vw; 
   line-height: 1.5;
@@ -280,7 +280,7 @@ nav .container {
 section#classic {
   background-color: #122ded;
 }
-.subscription {
+section#subscription {
   position: relative;
   background-color: #f20215;
 }

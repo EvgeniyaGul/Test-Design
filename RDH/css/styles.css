@@ -74,7 +74,8 @@ nav .container {
 
 /** HEADER **/
 #header-nav {
-  height: 15vh;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
   margin: 0;
   border-radius: 0;
   border: 0;
@@ -88,8 +89,12 @@ nav .container {
 .navbar-header {
     float: none;
 }
-.menu-main li, .menu-right li {
+.menu-main li {
   float: left;
+  margin: 5%;
+}
+.menu-main li a {
+  text-decoration: none;
 }
 #nav-list li {
     float: none;
@@ -125,6 +130,8 @@ nav .container {
 .menu a {
   width: 100%;
   height: 100%;
+}
+.menu-main h2 {
 }
 .navbar-header .navbar-left {
   width: 100%;
@@ -179,8 +186,19 @@ nav .container {
   width: 26px;
   height: 26px;
 }
-.navbar-form button {
+.navbar-form .btn {
   padding: 4px;
+  border: 0;
+  background-color: #fff;
+}
+.navbar-form #input-group {
+  display: none;
+}
+.navbar-form #input-group:target {
+  display: inline-block;
+  position: absolute;
+  bottom: -70%;
+  right: 35%;
 }
 /* END HEADER */
 /* MAIN CONTENT */

@@ -401,6 +401,9 @@ section#posts .banner a {
   background-position: 100% 0%;
   background-repeat: no-repeat;
 }
+section#posts .posts-list div:nth-child(odd){
+  clear: left;
+}
 #posts .banner h2 {
   text-align: center;
   letter-spacing: 3px;

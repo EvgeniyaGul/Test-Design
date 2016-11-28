@@ -262,7 +262,70 @@ section#main-posts {
   float: left;
   margin-bottom: 2%;
 }
-
+.post-1 {
+  background: url('../img/arhiwood-posts.png');
+  background-size: cover;
+  background-position: 100% 0%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 300px;
+}
+.post-2 {
+  background: url('../img/cinema-posts.png');
+  background-size: cover;
+  background-position: 100% 0%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 300px;
+}
+.post-3 {
+  background: url('../img/cinema-posts.png');
+  background-size: cover;
+  background-position: 100% 0%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 300px;
+}
+.post-4 {
+  background: url('../img/ikea-posts.png');
+  background-size: cover;
+  background-position: 100% 0%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 300px;
+}
+.post-5 {
+  background: url('../img/bolshevik-posts.png');
+  background-size: cover;
+  background-position: 100% 0%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 300px;
+}
+.post-6 {
+  background: url('../img/batimat-posts.png');
+  background-size: cover;
+  background-position: 100% 0%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 300px;
+}
+.post-7 {
+  background: url('../img/gorenje-posts.png');
+  background-size: cover;
+  background-position: 100% 0%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 300px;
+}
+.post-8 {
+  background: url('../img/heating-posts.png');
+  background-size: cover;
+  background-position: 100% 0%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 300px;
+}
 #main-posts .banner h2 {
   text-align: center;
   letter-spacing: 3px;

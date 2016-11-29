@@ -219,10 +219,9 @@ nav .container {
 }
 /* END HEADER */
 /* MAIN CONTENT */
-section#main-posts {
+section#main-posts:first-of-type { /* отступ первой секции от меню*/
   margin-top: 132px;
 }
-
 .title {
   position:absolute;
   left:5%;
@@ -256,6 +255,7 @@ section#main-posts {
   font-size: 18px;
   line-height: 1.5;
   text-align: left;
+  padding-bottom: 30px;
 }
 .post-object, .banner {
   position: relative;
@@ -326,7 +326,7 @@ section#main-posts {
   width: 100%;
   height: 300px;
 }
-#main-posts .banner h2 {
+#main-posts .banner-popular h2 {
   text-align: center;
   letter-spacing: 3px;
   color: #fff;
@@ -337,7 +337,7 @@ section#main-posts {
 .banner ul {
   width: 100%;
 }
-#main-posts .banner a {
+#main-posts .banner-popular a {
   float: left;
   font-size: 12px;
   text-transform: uppercase;
@@ -345,7 +345,7 @@ section#main-posts {
   background-color: #000;
   text-decoration: none;
 }
-#main-posts .banner a:hover {
+#main-posts .banner-popular a:hover {
   background-color: #122ded;
 }
 #main-posts .banner-popular, #posts .banner-news {
@@ -372,15 +372,18 @@ section#main-posts {
 }
 .banner .text {
   font-size: 15px;
-  padding: 5% 2%;
+  padding: 0 5% 5% 5%;
   background-color: #eeeeef;
 
 }
 .banner .shares-1 {
   font-size: 12px;
   color: #6a6a6a;
-  border-bottom: 2px solid  #6a6a6a;
+  border-bottom: 2px solid #c7b8b8;
   padding: 5% 2%;
+}
+.banner-popular div:last-child{
+  border-bottom: 0;
 }
 /** end of banner-1 **/
 #posts h2 {
@@ -541,25 +544,17 @@ section#subscription {
 .subs li:first-child {
   float: left;
 }
-#subscribe-input {
-   float: left;
-   border: none;
-   background: #ffffff !important; 
-   outline: none;
-   height: 10%; 
-   width: 50%; 
-   padding: 2%;
-   color: #000;
-   font-size: 1vw; 
-}
 #subscribe h2 {
   text-transform: none;
 }
 /** banner-3 **/
 #choise {
-  background-color: #fff !important;
+  background-color: #fff;
 }
-.choise {
+.banner-choise a {
+  width: 100%;
+}
+.choise, .cover {
   position: relative;
   float: left;
   margin-bottom: 5%;
@@ -591,10 +586,12 @@ section#subscription {
   background-size: cover;
   background-repeat: no-repeat;
 }
-.banner-choise h2 {
-  color: #000 !important;
-  background-color: #fff !important;
-  margin: 0 5% 5% 5% !important;
+.banner-choise > h2 {
+  text-align: center;
+  letter-spacing: 3px;
+  color: #000;
+  background-color: #fff;
+  margin: 0 5% 5% 5%;
 }
 #digit {
   position: absolute;
@@ -603,22 +600,24 @@ section#subscription {
   color: #fff;
   font-size: 21px;
 }
-.cover-text, .cover {
+.cover, .cover-text {
   display: none;
   position: absolute;
-  top: 5px;
+  top: 0;
   bottom: 0;
-  left: 5px;
+  left: 0;
   right: 0;
-  width: 301px;
+}
+.cover-text {
+  top: 20px;
+  left: 15px;
+  text-transform: uppercase;
+  color: #fff;
   font-size: 16px;
   line-height: 1.5;
 }
-.cover-text {
-  top: 25px;
-  left: 15px;
-}
 .cover {
+  
   background: rgba(0,0,0, 1);
   -khtml-opacity: .6;
   -moz-opacity: .6;
@@ -631,10 +630,7 @@ section#subscription {
 .link-hover:hover .cover, .link-hover:hover .cover-text {
   display: inline-block;
 }
-.banner-choise a {
-  padding: 0 !important;
-  background-color: #fff !important;
-}
+
 /** end of banner-3 **/
 #download ul, #subscribe {
   text-align: center;
@@ -664,7 +660,8 @@ section#subscription {
 }
 /** banner-4 **/
 .banner-hot {
-  background-color: #122ded !important;
+  background-color: #122ded;
+  padding: 5%;
 }
 .banner-hot+div {
   margin-bottom: 3%;
@@ -672,18 +669,20 @@ section#subscription {
 .hot {
   position: relative;
   float: left;
-  width: 100%;
-  height: 145px;
 }
 .hot-1 {
+  position: relative;
   background: url('../img/hot-1.png');
   background-size: cover;
   background-repeat: no-repeat;
+  height: 145px;
 }
 .hot-2 {
+  position: relative;
   background: url('../img/hot-2.png');
   background-size: cover;
   background-repeat: no-repeat;
+  height: 145px;
 }
 .shares {
   position: absolute;
@@ -755,7 +754,7 @@ section#subscription {
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
  /* Home Page */
-section#main-posts {
+section#main-posts:first-of-type {
   margin-top: 162px;
 }
 .menu-main h2 {
@@ -787,7 +786,7 @@ section#main-posts {
 /********** Extra small devices only **********/
 @media (max-width: 767px) {
   /* Home Page */
-section#main-posts {
+section#main-posts:first-of-type {
   margin-top: 212px;
 }
 .date, .object {

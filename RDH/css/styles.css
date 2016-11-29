@@ -1,3 +1,7 @@
+@font-face {
+    font-family: 'PT Mono';
+    src: url('../fonts/PTM55FT.ttf'); /* Путь к файлу со шрифтом */
+}
 body {
   color: #000;
   font: bold 12px 'PT Mono';
@@ -9,6 +13,7 @@ h2 {
   text-transform: uppercase;
   margin-top: 15px;
   line-height: 1.5;
+  letter-spacing: 2px;
 }
 section {
   padding: 1%;
@@ -21,6 +26,7 @@ section {
 }
 .container {
   position: relative;
+  border-bottom: 2px solid #e5e5e5;
 }
 header {
   position: fixed;
@@ -30,7 +36,6 @@ header {
   z-index: 100;
 } 
 a, a:focus {
-  display: inline-block;
   color:#000;
   text-decoration:underline;
   outline:none;
@@ -157,7 +162,7 @@ nav .container {
   position: relative;
   float: left;
   margin: 2%;
-  border: none;
+  border: 0;
 }
 .interni-logo {
   position: relative;
@@ -232,6 +237,7 @@ section#main-posts:first-of-type { /* отступ первой секции о�
   line-height:32px;
   padding:25px;
   text-align:center;
+  letter-spacing: 2px;
 }
 .object, .date {
   position:absolute;
@@ -240,6 +246,12 @@ section#main-posts:first-of-type { /* отступ первой секции о�
   font-size: 12px;
   padding: 1%;
   text-align:center;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.post-object img {
+  width: 100%;
 }
 .object {
   left: 1%;
@@ -255,76 +267,16 @@ section#main-posts:first-of-type { /* отступ первой секции о�
   font-size: 18px;
   line-height: 1.5;
   text-align: left;
-  padding-bottom: 30px;
+  padding: 10px 0 20px 0;
+  font-weight: bold;
 }
 .post-object, .banner {
   position: relative;
   float: left;
   margin-bottom: 2%;
 }
-.post-1 {
-  background: url('../img/arhiwood-posts.png');
-  background-size: cover;
-  background-position: 100% 0%;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 300px;
-}
-.post-2 {
-  background: url('../img/cinema-posts.png');
-  background-size: cover;
-  background-position: 100% 0%;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 300px;
-}
-.post-3 {
-  background: url('../img/cinema-posts.png');
-  background-size: cover;
-  background-position: 100% 0%;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 300px;
-}
-.post-4 {
-  background: url('../img/ikea-posts.png');
-  background-size: cover;
-  background-position: 100% 0%;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 300px;
-}
-.post-5 {
-  background: url('../img/bolshevik-posts.png');
-  background-size: cover;
-  background-position: 100% 0%;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 300px;
-}
-.post-6 {
-  background: url('../img/batimat-posts.png');
-  background-size: cover;
-  background-position: 100% 0%;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 300px;
-}
-.post-7 {
-  background: url('../img/gorenje-posts.png');
-  background-size: cover;
-  background-position: 100% 0%;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 300px;
-}
-.post-8 {
-  background: url('../img/heating-posts.png');
-  background-size: cover;
-  background-position: 100% 0%;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 300px;
+.banner {
+  max-width: 300px;
 }
 #main-posts .banner-popular h2 {
   text-align: center;
@@ -334,18 +286,26 @@ section#main-posts:first-of-type { /* отступ первой секции о�
   margin: 0;
   padding: 2%;
 }
-.banner ul {
+.banner-popular ul {
+  text-align: center;
   width: 100%;
 }
-#main-posts .banner-popular a {
+.banner-popular li {
+  display: inline-block;
   float: left;
+  background-color: #000;
+  width: 100px;
+  max-width: 100%;
+  padding: 2% 0;
+}
+#main-posts .banner-popular a {
   font-size: 12px;
   text-transform: uppercase;
   color: #fff;
-  background-color: #000;
   text-decoration: none;
+  letter-spacing: 1px;
 }
-#main-posts .banner-popular a:hover {
+#main-posts .banner-popular li:hover {
   background-color: #122ded;
 }
 #main-posts .banner-popular, #posts .banner-news {
@@ -354,12 +314,7 @@ section#main-posts:first-of-type { /* отступ первой секции о�
 .popular-1 {
   position: relative;
   clear: both;
-  background: url('../img/popular-1.png');
-  background-size: cover;
-  background-position: 100% 0%;
-  background-repeat: no-repeat;
   width: 100%;
-  height: 168px;
 }
 .popular-2 {
   position: relative;
@@ -370,9 +325,11 @@ section#main-posts:first-of-type { /* отступ первой секции о�
   background-repeat: no-repeat;
   height: 254px;
 }
+.popular-text {
+  padding: 5%;
+}
 .banner .text {
   font-size: 15px;
-  padding: 0 5% 5% 5%;
   background-color: #eeeeef;
 
 }
@@ -380,7 +337,7 @@ section#main-posts:first-of-type { /* отступ первой секции о�
   font-size: 12px;
   color: #6a6a6a;
   border-bottom: 2px solid #c7b8b8;
-  padding: 5% 2%;
+  padding-bottom: 20px;
 }
 .banner-popular div:last-child{
   border-bottom: 0;
@@ -423,9 +380,13 @@ section#main-posts:first-of-type { /* отступ первой секции о�
   text-decoration: none;
   font-weight: bold;
   border: 3px solid;
-  border-bottom: 5px solid; 
+  border-bottom: 5px solid;
+  font-size: 14px;
+  letter-spacing: 2px; 
 }
-
+#posts .btn {
+  margin: 0 25% 10% 25%;
+}
 /** banner-2 **/
 .news {
   position: relative;
@@ -517,6 +478,9 @@ section#subscription {
   position: relative;
   background-color: #f20215;
 }
+section#subscription .container, section#classic .container, .panel-footer .container {
+  border: 0;
+} 
 .subs {
   position: absolute;
   top: 10%;
@@ -554,37 +518,38 @@ section#subscription {
 .banner-choise a {
   width: 100%;
 }
+.choise img {
+  width: 100%;
+}
 .choise, .cover {
   position: relative;
   float: left;
   margin-bottom: 5%;
   width: 100%;
-  height: 105px;
 }
-.choise-1 {
-  background: url('../img/banner-3.png');
-  background-size: cover;
-  background-repeat: no-repeat;
+.square {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15%;
+  float: left;
 }
-.choise-2 {
-  background: url('../img/banner-4.png');
-  background-size: cover;
-  background-repeat: no-repeat;
+.square::before {
+  content: "";
+  display: block;
+  margin-top: 100%;
 }
-.choise-3 {
-  background: url('../img/banner-5.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.choise-4 {
-  background: url('../img/banner-6.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.choise-5 {
-  background: url('../img/banner-7.png');
-  background-size: cover;
-  background-repeat: no-repeat;
+.digit {
+  text-align: center;
+  color: #fff;
+  font-size: 21px;
+  line-height: 2;
+  background-color: #122ded;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
 .banner-choise > h2 {
   text-align: center;
@@ -609,7 +574,7 @@ section#subscription {
   right: 0;
 }
 .cover-text {
-  top: 20px;
+  top: 10px;
   left: 15px;
   text-transform: uppercase;
   color: #fff;
@@ -617,7 +582,6 @@ section#subscription {
   line-height: 1.5;
 }
 .cover {
-  
   background: rgba(0,0,0, 1);
   -khtml-opacity: .6;
   -moz-opacity: .6;
@@ -630,13 +594,16 @@ section#subscription {
 .link-hover:hover .cover, .link-hover:hover .cover-text {
   display: inline-block;
 }
-
+.link-hover:hover .square {
+  display: none;
+}
 /** end of banner-3 **/
 #download ul, #subscribe {
   text-align: center;
+  padding-bottom: 20px;
 }
 #download img, #subscribe img {
-  margin: 2% auto;
+  margin: 5% auto;
 }
 #download .post-object {
   margin: 3% 38%;
@@ -647,8 +614,12 @@ section#subscription {
   margin: 5% 35%;
 }
 #download span {
+  display: inline-block;
   clear: both;
+  color: #767676;
   font-size: 15px;
+  letter-spacing: 2px;
+  margin-top: 20px;
 }
 #subscribe .post-object {
   margin: 3% 25%;
@@ -719,7 +690,6 @@ section#subscription {
   background-color: #000000;
   border-top: 0;
   text-align: center;
-  font-color:;
 }
 .panel-footer div.row {
   margin-bottom: 35px;
@@ -732,7 +702,7 @@ section#subscription {
   color: #eeeeee;
   font-size: 18px;
   margin-right: 5%;
-  border: none;
+  border: 0;
   opacity: 0.9;
 }
 .panel-footer button:visited {

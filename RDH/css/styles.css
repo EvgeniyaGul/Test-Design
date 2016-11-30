@@ -18,9 +18,6 @@ h2 {
 section {
   padding: 1%;
 }
-.col-md-3 {
-  padding: 0 !important;
-}
 .navbar-nav a {
   text-decoration: none;
 }
@@ -59,6 +56,11 @@ nav .container {
 /** Modal Nav **/
 .modal-dialog {
   margin-left: 0;
+  width: auto;
+}
+.modal-content {
+  padding: 0;
+  border-radius: 0;
 }
 #modal-nav ul {
   float: left;
@@ -85,6 +87,7 @@ nav .container {
 }
 #nav-list .photo-nav {
   padding: 2%;
+  width: 100%;
 }
 #nav-list span {
   display: inline-block;
@@ -108,14 +111,14 @@ nav .container {
   background: url('../img/logo.png') no-repeat;
   width: 96px;
   height: 44px;
-  margin: 0 25%;
+  margin: 10% 25%;
 }
 .navbar-header {
     float: none;
 }
 .menu-main li {
   float: left;
-  margin: 5%;
+  margin: 8px;
 }
 .menu-main li a {
   text-decoration: none;
@@ -163,7 +166,6 @@ nav .container {
 .navbar-header .btn:first-child {
   width: 100%;
   position: relative;
-  float: left;
   margin: 2%;
   border: 0;
 }
@@ -203,10 +205,9 @@ nav .container {
   height: 17px;
   margin: 5%;
 }
-.navbar-form {
-  padding: 0 !important;
-  margin-right: 3%;
-}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #fff;
+} 
 .navbar-form img {
   width: 26px;
   height: 26px;
@@ -216,14 +217,15 @@ nav .container {
   border: 0;
   background-color: #fff;
 }
-.navbar-form #input-group {
+#input-group {
   display: none;
 }
-.navbar-form #input-group:target {
+#input-group:target {
   display: inline-block;
   position: absolute;
-  bottom: -70%;
-  right: 35%;
+  width: 100%;
+  left: 0;
+  bottom: 0;
 }
 /* END HEADER */
 /* MAIN CONTENT */
@@ -472,6 +474,9 @@ section#posts .posts-list div:nth-child(odd){
   background-repeat: no-repeat;
   height: 99px;
 }
+.clear {
+  clear: both;
+}
 /** end of banner-2 **/
 
 section#classic {
@@ -500,9 +505,6 @@ section#subscription .container, section#classic .container, .panel-footer .cont
   border: 0;
 } 
 .subs {
-  position: absolute;
-  top: 10%;
-  right: 15%;
   color: #fff;
   background-color: transparent;
 }
@@ -686,6 +688,7 @@ section#subscription .container, section#classic .container, .panel-footer .cont
   font-weight: normal;
   width: 100%;
   margin-bottom: 5%;
+  padding: 10px 10px 40px 10px;
 }
 .banner-hot h2 {
   font-size: 21px;
@@ -784,12 +787,6 @@ section#main-posts:first-of-type {
 } 
 .menu-main h2 {
   font-size: 4vw;
-}
-.menu-main li {
-  margin: 1% 8%;
-} 
-.col-sm-1, .col-sm-5 {
-  padding: 0 !important;
 }
 .classic-text {
   margin-left: 5%;

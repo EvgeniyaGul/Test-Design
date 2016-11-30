@@ -69,10 +69,13 @@ nav .container {
 #modal-nav ul button:focus, #modal-nav ul button:active {
    outline: none !important;
 }
-
+#modal-nav .socials {
+  position: absolute;
+}
 #modal-nav #nav-list {
-  width: 50%;
+  width: 100%;
   padding: 2%;
+  padding-left: 76px;
 }
 #modal-nav li:first-child {
   background-color: #fff;
@@ -250,7 +253,7 @@ section#main-posts:first-of-type { /* отступ первой секции о�
   font-weight: bold;
   letter-spacing: 1px;
 }
-.post-object img {
+.post-object img, .choise img, .banner-hot img, #subscription img {
   width: 100%;
 }
 .object {
@@ -272,11 +275,11 @@ section#main-posts:first-of-type { /* отступ первой секции о�
 }
 .post-object, .banner {
   position: relative;
-  float: left;
   margin-bottom: 2%;
 }
 .banner {
   max-width: 300px;
+  margin: 0 auto 10px auto;
 }
 #main-posts .banner-popular h2 {
   text-align: center;
@@ -360,11 +363,11 @@ section#main-posts:first-of-type { /* отступ первой секции о�
   display: inline-block;
   font-size: 16px; 
   line-height: 1.5;
+  letter-spacing: 2px;
 }
 .classic-text a {
   margin-top: 5%;
 }
-
 .gallery a {
   margin-left: 5%;
 }
@@ -477,6 +480,21 @@ section#classic {
 section#subscription {
   position: relative;
   background-color: #f20215;
+  background: url('../img/section-1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 80px 0 60px 0;
+}
+#subscription .btn {
+  max-width: 260px;
+}
+.subs-1 h2 {
+  font-size: 21.43px;
+  color: #fff;
+}
+.subs h2 {
+  font-size: 25px;
+  color: #fff;
 }
 section#subscription .container, section#classic .container, .panel-footer .container {
   border: 0;
@@ -493,32 +511,38 @@ section#subscription .container, section#classic .container, .panel-footer .cont
   font-size: 25px;
 }
 .subs .btn {
-  width: 10%;
-  height: 10%;
   padding: 2.8%;
   background-color: #122ded;
   border: none;
   border-radius: 0;
 }
+.subs ul {
+  padding: 20px 0 20px 0;
+  display: table;
+}
 .subs input {
   font-size: 14px;
   color: #000;
-  line-height: 2.7;
+  line-height: 3;
 }
 .subs li:first-child {
   float: left;
+}
+.subs li {
+  display: table-cell;
+  vertical-align: middle;
+}
+.subs-1 img {
+  max-width: 260px;
 }
 #subscribe h2 {
   text-transform: none;
 }
 /** banner-3 **/
-#choise {
+.banner-choise {
   background-color: #fff;
 }
 .banner-choise a {
-  width: 100%;
-}
-.choise img {
   width: 100%;
 }
 .choise, .cover {
@@ -632,28 +656,13 @@ section#subscription .container, section#classic .container, .panel-footer .cont
 /** banner-4 **/
 .banner-hot {
   background-color: #122ded;
-  padding: 5%;
+  padding: 15px;
 }
 .banner-hot+div {
   margin-bottom: 3%;
 }
-.hot {
+.hot-1, .hot-2, .banner-hot .text {
   position: relative;
-  float: left;
-}
-.hot-1 {
-  position: relative;
-  background: url('../img/hot-1.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 145px;
-}
-.hot-2 {
-  position: relative;
-  background: url('../img/hot-2.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 145px;
 }
 .shares {
   position: absolute;

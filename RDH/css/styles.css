@@ -835,6 +835,7 @@ section#main-posts:first-of-type {
 }
 #search-box input {
   height: 80px;
+  background: transparent;
 }
 /* Footer */
   .panel-footer section {

@@ -202,10 +202,11 @@ nav .container {
   border-right: 1px solid #e5e5e5;
   height: 80px;
 }
-.navbar-header .btn:first-child {
+.search-form .btn {
   position: relative;
   float: left;
   border: 0;
+  box-shadow: none;
 }
 .interni-logo {
   position: relative;
@@ -796,6 +797,9 @@ section#subscription .container, section#classic .container, .panel-footer .cont
 @media (min-width: 992px) and (max-width: 1199px) {
 .banner {
   margin: 0 auto;
+ }
+ .menu-main li {
+  padding: 20px 5px;
  }
  
 }

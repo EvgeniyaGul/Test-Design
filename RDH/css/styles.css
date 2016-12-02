@@ -121,17 +121,24 @@ nav .container {
 }
 .navbar-header .objects {
     border-right: 0;
-    padding: 20px;
+    padding: 25px 20px;
 }
 .objects li {
   margin: 5px;
 }
 .menu-main li {
   float: left;
-  margin: 10px 5px;
+  padding: 20px 15px;
+  height: 80px;
+  line-height: 3;
 }
 .menu-main li a {
   text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 #nav-list li {
   float: none;
@@ -183,25 +190,30 @@ nav .container {
 .interni-logo {
   position: relative;
   float: left;
-  background: url('../img/interni-arrow.png');
+  background-image: url('../img/interni.svg');
   background-size: cover;
-  background-position: 100% 0%;
   background-repeat: no-repeat;
-  max-width: 100%;
-  width: 105px;
-  height: 17px;
+  width: 98px;
+  height: 22px;
+}
+.interni-logo:hover {
+  background-image: url('../img/interniCOLOR.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .object-logo {
   position: relative;
   float: left;
-  background-image: url('../img/object-arrow.png');
-  color: #000;
+  background-image: url('../img/objekt.svg');
   background-size: cover;
-  background-position: 100% 0%;
   background-repeat: no-repeat;
-  max-width: 100%;
-  width: 117px;
-  height: 17px;
+  width: 111px;
+  height: 19px;
+}
+.object-logo:hover {
+  background-image: url('../img/objektCOLOR.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .arrow {
   position: relative;
@@ -219,6 +231,7 @@ nav .container {
 } 
 .navbar-form {
   padding: 0;
+  margin: 0;
 } 
 .navbar-header .search-button, .navbar-header .search-button-1 {
   border-right: 0;
@@ -246,14 +259,20 @@ nav .container {
 #search-box:target {
   display: inline-block;
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: 0;
+  left: 0;
 }
 #search-box:target input {
   border: 0;
   box-shadow: none;
   float: left;
   width: 100%;
+}
+.search-form a {
+  padding: 25px 5px;
+}
+#search-box input {
+  height: 80px;
 }
 /* END SEARCH BLOCK*/
 
@@ -833,10 +852,7 @@ section#main-posts:first-of-type {
 #search-box:target {
   top: 70px;
 }
-#search-box input {
-  height: 80px;
-  background: transparent;
-}
+
 /* Footer */
   .panel-footer section {
     margin-bottom: 30px;
@@ -880,14 +896,14 @@ section#main-posts:first-of-type {
     padding: 10px 30px;
   }
   .menu-main li {
-    margin: 10px;
+    padding: 15px 10px;
   }
   #search-box:target {
-  top: 95px;
+  top: 120px;
 }
-#search-box input {
-  height: 80px;
-}
+  .search-form a {
+  padding: 15px 5px;
+ }
 }
   
 

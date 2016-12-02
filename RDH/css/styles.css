@@ -123,9 +123,10 @@ nav .container {
   border-right: 0;
   padding: 29px 20px;
 }
-.objects li {
+.objects a {
   margin-right: 30px;
 }
+
 .interni-logo:before {
   content: " ";
   display: block;

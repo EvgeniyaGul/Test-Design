@@ -16,7 +16,7 @@ h2 {
   letter-spacing: 2px;
 }
 section {
-  padding: 20px;
+  padding: 20px 0;
 }
 .navbar-nav a {
   text-decoration: none;
@@ -120,11 +120,31 @@ nav .container {
   margin-bottom: 0;
 }
 .navbar-header .objects {
-    border-right: 0;
-    padding: 25px 20px;
+  border-right: 0;
+  padding: 29px 20px;
 }
 .objects li {
-  margin: 5px;
+  margin-right: 30px;
+}
+.interni-logo:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 105px;
+  background-image: url('../img/arrow.png');
+  background-size: cover;
+  height: 17px;
+  width: 10px;
+}
+.object-logo:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 118px;
+  background-image: url('../img/arrow.png');
+  background-size: cover;
+  height: 17px;
+  width: 10px;
 }
 .menu-main li {
   float: left;
@@ -214,17 +234,6 @@ nav .container {
   background-image: url('../img/objektCOLOR.svg');
   background-size: cover;
   background-repeat: no-repeat;
-}
-.arrow {
-  position: relative;
-  float: left;
-  background: url('../img/arrow.png');
-  background-size: cover;
-  background-position: 100% 0%;
-  background-repeat: no-repeat;
-  width: 10px;
-  height: 17px;
-  margin: 5%;
 }
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
   border-color: #fff;

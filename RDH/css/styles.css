@@ -1011,10 +1011,7 @@ section#classic img {
    .menu {
     background-position: -15px 2px;
    }
-   .objects li {
-    margin: 5px 10px;
-  }
-  .object-logo {
+    .object-logo {
   margin-left: 0;
   }
   .navbar-header .objects {

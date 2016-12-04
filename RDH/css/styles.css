@@ -320,7 +320,6 @@ section#main-posts:first-of-type { /* отступ первой секции о�
 }
 .post-object img, .choise img, .banner-hot img, #subscription img {
   width: 100%;
-  margin: 0 auto;
 }
 .object {
   left: 2px;
@@ -397,18 +396,21 @@ section#main-posts:first-of-type { /* отступ первой секции о�
   background-repeat: no-repeat;
   height: 254px;
 }
+.popular-text .text {
+  padding-bottom: 13px;
+}
 .popular-text {
   padding: 5%;
 }
 .banner .text {
   font-size: 15px;
   background-color: #eeeeee;
-
 }
 .banner .shares-1 {
   font-size: 12px;
   color: #6a6a6a;
-  border-bottom: 2px solid #d6d6d7;
+  border-bottom: 1px solid #d6d6d7;
+  padding-top: 28px;
   padding-bottom: 20px;
 }
 .banner-popular div:last-child{
@@ -421,7 +423,7 @@ section#main-posts:first-of-type { /* отступ первой секции о�
   margin:60px;
 }
 #classic img {
-  margin: 20px auto;
+  margin: 20px 0;
 }
 #classic .container, #classic h2 {
   color: #fff;
@@ -524,7 +526,7 @@ section#posts .posts-list div:nth-child(odd){
 #posts .banner span {
   display: table-cell;
   vertical-align: middle;
-  font-family: "PT SansReg"
+  font-family: "PT SansReg";
   font-size: 16px;
   font-weight: normal;
   line-height: 19px;
@@ -711,12 +713,12 @@ section#subscription .container, section#classic .container, .panel-footer .cont
 /** end of banner-3 **/
 #download ul, #subscribe ul {
   text-align: center;
-  border-bottom: 2px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
   padding-top: 30px;
   margin: 0;
 }
 #download ul {
-  border-top: 2px solid #e5e5e5;
+  border-top: 1px solid #e5e5e5;
   padding-bottom: 50px;
 }
 #download img {
@@ -834,18 +836,29 @@ section#subscription .container, section#classic .container, .panel-footer .cont
   color: #eeeeee;
 }
 /* END FOOTER */
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+ .menu {
+  background-position: -20px;
+ }
+ .banner, .gallery {
+  float: right;
+ }
+}
 /********** Medium devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
  .menu {
   background-position: -20px;
  }
+ .banner, .gallery  {
+  float: right;
+ }
 }
-  
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
  /* Home Page */
 section#main-posts:first-of-type {
-  margin-top: 162px;
+  margin-top: 208px;
 }
 .menu-main h2 {
     font-size: 2vw;
@@ -853,7 +866,7 @@ section#main-posts:first-of-type {
 .title {
  font-size: 3vw;
  }
- .menu {
+.menu {
     background-position: 100% 50%;
    }
 #posts .banner span {
@@ -883,6 +896,18 @@ section#main-posts:first-of-type {
 .objects a {
   display: inline-block;
 }
+section#classic {
+  text-align: center;
+}
+section#classic img {
+  margin: 20px auto;
+}
+.gallery a {
+ margin-bottom: 20px;
+}
+.banner {
+  margin: 15px auto;
+ }
 }
  
 /********** Extra small devices only **********/
@@ -899,7 +924,6 @@ section#main-posts:first-of-type {
   line-height: 1.5;
   padding: 2%;
 }
-
 .objects li {
   margin: 15px 50px;
 }
@@ -930,6 +954,18 @@ section#main-posts:first-of-type {
 }
 .interni-logo {
   margin-left: 10px;
+}
+.banner {
+  margin: 15px auto;
+ }
+section#classic {
+  text-align: center;
+}
+section#classic img {
+  margin: 20px auto;
+}
+.gallery a {
+ margin-bottom: 20px;
 }
 /* Footer */
   .panel-footer section {
@@ -979,6 +1015,18 @@ section#main-posts:first-of-type {
   .search-form a {
   padding: 15px 0px;
  }
+  .banner {
+  margin: 15px auto;
+ }
+ section#classic {
+  text-align: center;
+}
+ section#classic img {
+  margin: 20px auto;
+}
+.gallery a {
+ margin-bottom: 20px;
+}
 }
   
 

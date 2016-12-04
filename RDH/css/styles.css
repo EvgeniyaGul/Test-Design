@@ -995,6 +995,9 @@ section#classic img {
 /********** Super extra small devices Only (e.g., iPhone 4) **********/
 @media (max-width: 479px) {
   /* Home Page */
+  section#main-posts:first-of-type {
+    margin-top: 225px;
+  }
   .date, .object {
     font-size: 3vw;
   }
@@ -1013,7 +1016,10 @@ section#classic img {
   }
   .object-logo {
   margin-left: 0;
-}
+  }
+  .navbar-header .objects {
+    padding: 20px 10px;
+  }
   .navbar-header .header-item, .navbar-header .header-item-1, .menu {
     height: 60px;
   }

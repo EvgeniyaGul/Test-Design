@@ -125,7 +125,7 @@ nav .container {
 }
 .navbar-header .objects {
   border-right: 0;
-  padding: 29px 30px;
+  padding: 30px;
 }
 .objects div {
   margin-right: 25px;
@@ -234,6 +234,7 @@ nav .container {
   background-repeat: no-repeat;
   width: 111px;
   height: 19px;
+  margin-left: 50px;
 }
 .object-logo:hover {
   background-image: url('../img/objektCOLOR.svg');
@@ -689,7 +690,6 @@ section#subscription .container, section#classic .container, .panel-footer .cont
 .cover-text {
   top: 10px;
   left: 15px;
-  text-transform: uppercase;
   color: #fff;
   font-size: 16px;
   line-height: 1.5;
@@ -869,11 +869,14 @@ section#main-posts:first-of-type {
 .menu {
     background-position: 100% 50%;
    }
-#posts .banner span {
-  font-size: 12px;
+.object-logo {
+  margin-left: 0;
 }
 .navbar-header .objects {
   padding: 29px 10px;
+}
+.navbar-header ul {
+  text-align: left;
 }
 #search-box:target {
   top: 70px;
@@ -914,7 +917,7 @@ section#classic img {
 @media (max-width: 767px) {
   /* Home Page */
 section#main-posts:first-of-type {
-  margin-top: 212px;
+  margin-top: 290px;
 }
 .date, .object {
   font-size: 2vw;
@@ -927,16 +930,18 @@ section#main-posts:first-of-type {
 .objects li {
   margin: 15px 50px;
 }
+.object-logo {
+  margin-left: 0;
+}
 .menu-main h2 {
   font-size: 4vw;
 }
 .nav-bar-header .search-button {
   padding: 10px 30px;
 }
-.menu-main {
-  padding-left: 25px;
+.menu-main li {
+  padding: 10px 5px 30px 5px;
 }
-
 #search-box:target {
   top: 70px;
 }
@@ -951,6 +956,12 @@ section#main-posts:first-of-type {
  }
 .navbar-header .header-item-1 {
   border-right: 0;
+}
+.objects {
+  text-align: center;
+}
+.objects a {
+  display: inline-block;
 }
 .interni-logo {
   margin-left: 10px;
@@ -1000,6 +1011,9 @@ section#classic img {
    .objects li {
     margin: 5px 10px;
   }
+  .object-logo {
+  margin-left: 0;
+}
   .navbar-header .header-item, .navbar-header .header-item-1, .menu {
     height: 60px;
   }
@@ -1010,8 +1024,8 @@ section#classic img {
     padding: 10px 30px;
   }
   .menu-main li {
-    padding: 15px 10px;
-  }
+  padding: 10px 5px 30px 5px;
+}
   .search-form a {
   padding: 15px 0px;
  }

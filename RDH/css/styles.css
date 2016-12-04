@@ -370,12 +370,15 @@ section#main-posts:first-of-type { /* отступ первой секции о�
   max-width: 100%;
   padding: 2% 0;
 }
-#main-posts .banner-popular a {
+.banner-popular .popular-list a {
   font-size: 12px;
   text-transform: uppercase;
   color: #fff;
   text-decoration: none;
   letter-spacing: 1px;
+}
+.popular-text a {
+  text-decoration: none;
 }
 #main-posts .banner-popular li:hover {
   background-color: #122ded;
@@ -421,7 +424,6 @@ section#main-posts:first-of-type { /* отступ первой секции о�
 #posts h2 {
   text-align:center;
   font-weight: bold;
-  margin:60px;
 }
 #classic img {
   margin: 20px 0;
@@ -475,6 +477,8 @@ section#main-posts:first-of-type { /* отступ первой секции о�
 }
 section#posts .banner a {
   width: 100%; /* чтобы у background корректно работал contain с шириной 100% */
+  display: table;
+  text-decoration: none;
 }
 .new-1 {
   background: url('../img/new-1.png');
@@ -509,7 +513,7 @@ section#posts .banner a {
 section#posts .posts-list div:nth-child(odd){
   clear: left;
 }
-#posts .banner h2 {
+#posts .banner-news h2 {
   text-align: center;
   letter-spacing: 3px;
   color: #000;
@@ -521,7 +525,6 @@ section#posts .posts-list div:nth-child(odd){
   margin: 0;
 }
 #posts .banner li {
-  display: table;
   padding-top: 14px;
 }
 #posts .banner span {
@@ -797,7 +800,9 @@ section#subscription .container, section#classic .container, .panel-footer .cont
 }
 .banner-hot h2 {
   font-size: 21px;
-  color: #fff !important;
+  color: #fff;
+  padding: 5px 0px 20px 0px;
+  margin: 0;
 }
 /** end of banner-4 **/
 /* FOOTER */

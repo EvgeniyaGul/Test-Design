@@ -447,17 +447,10 @@ section#guide .post-list {
  .wrapper {
   margin-top: 242px;
   }
-  .new-post  {
-  width: 33.33%;
-  float: left;
-  } 
-  .new-post-big {
-  width: 66.66%;
- }
-  .new-post-big-2 {
-  width: 100%;
-  clear: left;
-}
+  section#news .post-list {
+    margin-bottom: 0;
+    margin-top: 18px;
+  }
 }
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
@@ -497,12 +490,15 @@ section#experience .right {
 }
 /********** Extra small devices only **********/
 @media (max-width: 767px) {
+ h1 {
+    padding: 10px;
+    font-size: 35px;
+  }
  .wrapper {
   margin-top: 264px;
  }
  .navbar-brand {
   clear: both;
-  margin: 0 25%;
  }
  .navbar-header button#navbarToggle {
   clear: both;
@@ -512,7 +508,6 @@ section#experience .right {
   width: 100%;
   float: left;
   overflow: hidden;
-  margin-top: 15px;
   margin-bottom: 15px;
   } 
   .new-post-big {
@@ -530,10 +525,11 @@ section#news .post-list {
     margin-bottom: 0;
     margin-top: 18px;
   }
+  /**
  section#experience .right {
   margin: 15px 0;
   padding-left: 25px;
-}  
+} **/
   .right {
   padding-left: 15px;
   padding-top: 15px;
@@ -545,22 +541,80 @@ section#news .post-list {
   padding-left: 15px;
   padding-top: 15px;  
   }
-  .post-object-2 {
+  /*.post-object-2 {
   padding-left: 25px;
-  }
-.col-xs-12, .col-sm-6 {
+  }*/
+  .col-xs-12, .col-sm-6 {
   overflow: hidden;
  }
+ .lead {
+    padding: 0;
+  }
 }
 
 /********** Super extra small devices Only (e.g., iPhone 4) **********/
 @media (max-width: 479px) {
+  h1 {
+    padding: 10px;
+  }
   .wrapper {
   margin-top: 234px;
-}
-  .navbar-brand {
-  margin: 0 17%;
- }
+  }
+  .lead {
+    padding: 0px 16px;
+    font-size: 14px;
+  }
+  .post-object, .post-list .right {
+    margin-right: 0;
+  }
+  section#news .post-list .right {
+    margin-left: 0;
+  }
+  .post-object .number {
+    font-size: 130px;
+    line-height: 100px;
+  }
+  .post-object .month {
+    font-size: 16px;
+    left: 16px;
+    line-height: 16px;
+  }
+  .post-object .date {
+    padding: 16px;
+  }
+  .new-title {
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .new-place {
+    font-size: 11px;
+    line-height: 20px;
+    margin-top: 20px;
+  }
+  section#news .new-post-big-2 {
+    margin-bottom: 15px;
+  }
+  section#news .new-post-big-2 .tagline {
+    padding: 10px 16px;
+  }
+  section#news .post-list {
+    margin-top: 0;
+    margin-right: 10px;
+  }
+  section#news .new-post-big-2 .right {
+    margin-right: 10px;
+  }
+  section#news .new-post-big-2 .new-text {
+    padding: 0px 16px 45px 16px;
+  }
+  .citate {
+    font-size: 26px;
+    line-height: 26px;
+    padding: 16px;
+  }
+  section#expedition .text {
+    width: 100%;
+  }
 }
   
 

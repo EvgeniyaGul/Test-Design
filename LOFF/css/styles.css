@@ -1,0 +1,567 @@
+@font-face {
+    font-family: 'HypatiaSansPro';
+    src: url('../fonts/Hypatia-Sans-Pro.ttf'); 
+}
+@font-face {
+    font-family: 'MinionPro';
+    src: url('../fonts/Minion Pro.ttf'); 
+}
+@font-face {
+    font-family: 'MinionProCN';
+    src: url('../fonts/minionpro-cndisp.otf'); 
+}
+@font-face {
+    font-family: 'FuturaHeavy';
+    src: url('../fonts/FuturaNewHeavy.otf'); 
+}
+@font-face {
+    font-family: 'FuturaNewBookReg';
+    src: url('../fonts/FuturaNewBookReg.otf'); 
+}
+@font-face {
+    font-family: 'FuturaLight';
+    src: url('../fonts/FuturaLight.otf'); 
+}
+@font-face {
+    font-family: 'MinionProSub';
+    src: url('../fonts/Minion-Pro-Medium-Subhead.ttf'); 
+}
+@font-face {
+    font-family: 'MinionProItalic';
+    src: url('../fonts/MinionPro-CnIt.otf'); 
+}
+@font-face {
+    font-family: 'MinionProBold';
+    src: url('../fonts/Minion-Pro-Bold.ttf'); 
+}
+@font-face {
+    font-family: 'MinionProReg';
+    src: url('../fonts/MinionPro-Regular.otf'); 
+}
+body {
+  color: #000;
+  background-color: #f0f5f8;
+  font: bold 12px 'PT Mono';
+}
+.wrapper {
+  background-color: #f0f5f8;
+}
+.row {
+  overflow: hidden;
+}
+section {
+  margin-bottom: 80px;
+}
+section .container {
+  background-color: #fff;
+}
+h1 {
+  font-family: 'MinionPro';
+  font-size: 50px;
+  line-height: 50px;
+  letter-spacing: 2px;
+  text-align: center;
+  background-color: #f0f5f8;
+  padding: 26px;
+  margin: 0;
+}
+h2 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+  text-transform: uppercase;
+  line-height: 1.5;
+  letter-spacing: 2px;
+}
+/** HEADER **/
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  background-color: #f0f5f8;
+} 
+.navbar-nav a {
+  text-decoration: none;
+}
+a, a:focus {
+  color:#000;
+  text-decoration:underline;
+  outline:none;
+}
+a:hover {
+  color:#000;
+  text-decoration:none;
+}
+nav {
+  position:relative;
+  margin-bottom:20px;
+}
+nav .container {
+  position:relative;
+}
+.navbar-brand {
+  height: 94px;
+  padding: 15px 95px;
+}
+#header-nav {
+  color: #fff;
+  background-color: #000;
+  border-radius: 0;
+  border: 0;
+}
+#header-nav ul {
+  font-family: 'HypatiaSansPro';
+  margin-bottom: 0;
+}
+#header-nav li {
+  display: table-cell;
+  vertical-align: middle;
+  height: 94px;
+}
+.navbar-default .navbar-nav > li > a {
+  font-size: 20px;
+  line-height: 24px;
+  height: 100%;
+  color: #fff;
+  padding-top: 35px;
+}
+.navbar-default .navbar-nav > li > a:hover {
+  background: #fff;
+}
+.navbar-default .navbar-nav > li > a:focus {
+  color: #fff;
+}
+.navbar-default .navbar-nav > li > a:focus:hover {
+  color: #000;
+}
+/* END HEADER */
+/* MAIN CONTENT */
+.title {
+  margin: 15px 10px;
+}
+.wrapper {
+  margin-top: 262px;
+}
+section#news h1 {
+  font-family: 'MinionPro';
+  font-size: 50px;
+  line-height: 30px;
+  letter-spacing: 2px;
+  text-align: center;
+  background-color: #f0f5f8;
+  padding: 26px;
+}
+section#our, section#our .container, section#our h1, section#our h2, section#our .goTo, section#our .post-object, section#our a {
+  color: #fff;
+  background-color: #284687;
+}
+section#our .photo-1 {
+  background-color: #fff;
+}
+section#our .text {
+  font-family: 'MinionProReg';
+  color: #fff;
+  background-color: #284687;
+  font-size: 17.5px;
+  line-height: 22px;
+  padding: 0;
+  padding-bottom: 50px;
+}
+section#our h3 {
+  font-family: 'FuturaHeavy';
+  color: #fff;
+  font-size: 21px;
+  line-height: 22px;
+  text-align: center;
+  background-color: #284687;
+  padding: 14px;
+  margin: 0;
+}
+.new-post  {
+  width: 20%;
+  float: left;
+}
+section#news .post-object {
+  margin-right: 15px;
+}
+section#news .right {
+  margin-right: 25px;
+  margin-left: 15px;
+}
+section#news .post-list {
+  padding: 0;
+  margin-top: 33px;
+  margin-bottom: 15px;
+  margin-left: 10px;
+}
+section#news .post-list .right {
+  margin-right: 10px;
+}
+section#news .new-post-big-2 .right {
+  margin-right: 25px;
+}
+.new-post-big, .new-post-big-2 {
+  width: 40%;
+  float: left;
+  background-color: #fff;
+}
+.new-post-big-2 .post-object {
+  padding-left: 0;
+  padding-right: 0;
+}
+.clear {
+  clear: both;
+}
+.post-list {
+  padding: 0px 25px;
+  overflow: hidden;
+}
+.left {
+  padding-right: 0;
+}
+.right {
+  padding-left: 0;
+}
+.post-object {
+  background-color: #f0f5f8;
+  padding: 16px;
+  margin-bottom: -1000px;
+  padding-bottom: 1000px;
+}
+.post-object-2 {
+  padding-right: 0;
+}
+.photo-1, .photo-2 {
+  width: 100%;
+  height: 207px;
+  background-color: #000;
+}
+.post-object a {
+  text-decoration: none;
+}
+.post-object .date {
+  position: relative;
+}
+.post-object .number {
+  font-family: 'MinionProCN';
+  font-size: 190px;
+  line-height: 200px;
+}
+.post-object .month {
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  font-family: 'MinionPro';
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 22px;
+  letter-spacing: 2px;
+}
+.new-title {
+  font-family: 'FuturaHeavy';
+  font-size: 21px;
+  line-height: 22px;
+}
+.new-place {
+  font-family: 'MinionPro';
+  font-size: 13.5px;
+  line-height: 22px;
+  text-transform: uppercase;
+  margin-top: 50px;
+}
+.new-text {
+  font-family: 'MinionProReg';
+  font-size: 14px;
+  padding-bottom: 45px;
+}
+.lead {
+  font-family: 'MinionProSub';
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 1px;
+  text-align: center;
+  background-color: #f0f5f8;
+  padding: 12px 100px;
+  margin: 0;
+}
+.goTo {
+  font-family: 'MinionProItalic';
+  font-size: 26px;
+  line-height: 22px;
+  text-align: center;
+  background-color: #f0f5f8;
+  padding: 26px;
+  margin: 0;
+}
+section#experience h3 {
+  font-family: 'FuturaHeavy';
+  font-size: 27px;
+  line-height: 28px;
+  text-align: center;
+  background-color: #f0f5f8;
+  padding: 14px;
+  margin: 0;
+}
+.author {
+  font-family: 'MinionProBold';
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #f0f5f8;
+  padding-top: 46px;
+  margin: 0;
+}
+.author-1 {
+  font-family: 'MinionProBold';
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #f0f5f8;
+  padding-top: 18px;
+  margin: 0;
+}
+.text {
+  font-family: 'MinionProReg';
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  background-color: #f0f5f8;
+  padding: 7px;
+  margin: 0;
+}
+section#experience .details {
+  padding-top: 32px;
+  padding-bottom: 15px;
+}
+section#experience .text {
+  padding-bottom: 28px;
+}
+section#symbiosis .details, section#symbiosis .post-list, section#exposure .post-list, section#expedition .post-list {
+  padding-top: 0;
+  padding-bottom: 15px;
+}
+.citate {
+  display: inline-block;
+  font-family: 'FuturaLight';
+  font-size: 47px;
+  line-height: 53px;
+  letter-spacing: 2px;
+  background-color: #f0f5f8;
+  text-align: center;
+  padding: 35px;
+  margin: 0;
+  margin-bottom: -1000px;
+  padding-bottom: 1000px;
+}
+section#symbiosis .photo-1, section#exposure .photo-1, section#expedition .photo-1 {
+  width: 100%;
+  height: 415px;
+  margin-bottom: 15px;
+}
+section#symbiosis h3, section#exposure h3 {
+  font-family: 'FuturaHeavy';
+  font-size: 21px;
+  line-height: 22px;
+  text-align: left;
+  background-color: #f0f5f8;
+  margin: 0;
+}
+section#expedition h3 {
+  font-family: 'FuturaHeavy';
+  font-size: 21px;
+  line-height: 22px;
+  text-align: center;
+  background-color: #f0f5f8;
+  margin: 0;
+}
+section#symbiosis .text, section#exposure .text {
+  font-family: 'MinionProReg';
+  font-size: 14px;
+  line-height: 20px;
+  text-align: left;
+  background-color: #f0f5f8;
+  padding: 25px 0px;
+  margin: 0;
+}
+section#expedition .text {
+  font-family: 'MinionProReg';
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  background-color: #fff;
+  padding: 25px 0px;
+  margin: 0 auto;
+  width: 60%;
+}
+section#expedition h3, section#expedition .post-object {
+  background-color: #fff;
+}
+section#expedition .post-object {
+  padding: 0;
+  margin-bottom: -1000px;
+  padding-bottom: 1000px;
+}
+section#expedition .post-list {
+  padding-bottom: 0;
+  margin-bottom: 15px;
+}
+section#guide .photo-1 {
+  height: 500px;
+}
+.tagline {
+  font-family: 'FuturaNewBookReg';
+  font-size: 10px;
+  line-height: 15px;
+  text-transform: uppercase;
+  text-align: left;
+  padding: 10px 0px;
+}
+section#guide .text {
+  font-family: 'MinionProReg';
+  font-size: 14px;
+  line-height: 15px;
+  text-align: left;
+  padding: 0;
+  padding-bottom: 40px;
+}
+section#guide .post-list {
+  padding-bottom: 15px;
+}
+/* END MAIN CONTENT */
+
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+ 
+}
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+ .wrapper {
+  margin-top: 242px;
+  }
+  .new-post  {
+  width: 33.33%;
+  float: left;
+  } 
+  .new-post-big {
+  width: 66.66%;
+ }
+  .new-post-big-2 {
+  width: 100%;
+  clear: left;
+}
+}
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+ .wrapper {
+  margin-top: 320px;
+ }
+ .navbar-header a {
+  margin: 0 30%;
+ }
+ .new-post  {
+  width: 33.33%;
+  float: left;
+  overflow: hidden;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  } 
+  .new-post-big {
+  width: 66.66%;
+  overflow: hidden;
+ }
+  .new-post-big-2 {
+  width: 66.66%;
+  clear: both;
+  margin: 15px 18%;
+  overflow: hidden;
+}
+section#news .post-list {
+    margin-bottom: 0;
+    margin-top: 18px;
+  }
+section#experience .right {
+  margin: 15px 25%;
+}
+.col-xs-12, .col-sm-6 {
+  overflow: hidden;
+ }
+}
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+ .wrapper {
+  margin-top: 264px;
+ }
+ .navbar-brand {
+  clear: both;
+  margin: 0 25%;
+ }
+ .navbar-header button#navbarToggle {
+  clear: both;
+  margin: 15px 45%;
+ }
+ .new-post  {
+  width: 100%;
+  float: left;
+  overflow: hidden;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  } 
+  .new-post-big {
+  width: 100%;
+  overflow: hidden;
+ }
+  .new-post-big-2 {
+  width: 100%;
+  clear: both;
+  overflow: hidden;
+  margin-top: 15px;
+  padding-right: 7px;
+}
+section#news .post-list {
+    margin-bottom: 0;
+    margin-top: 18px;
+  }
+ section#experience .right {
+  margin: 15px 0;
+  padding-left: 25px;
+}  
+  .right {
+  padding-left: 15px;
+  padding-top: 15px;
+  }
+  .left, .post-object-2 {
+  padding-right: 15px;
+  }
+  .center {
+  padding-left: 15px;
+  padding-top: 15px;  
+  }
+  .post-object-2 {
+  padding-left: 25px;
+  }
+.col-xs-12, .col-sm-6 {
+  overflow: hidden;
+ }
+}
+
+/********** Super extra small devices Only (e.g., iPhone 4) **********/
+@media (max-width: 479px) {
+  .wrapper {
+  margin-top: 234px;
+}
+  .navbar-brand {
+  margin: 0 17%;
+ }
+}
+  
+
+

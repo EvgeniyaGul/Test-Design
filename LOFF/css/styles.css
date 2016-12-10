@@ -626,6 +626,9 @@ section#news .post-list {
   section#expedition .text {
     width: 100%;
   }
+  .navbar-default .navbar-nav {
+    width: 100%;
+  }
 }
   
 

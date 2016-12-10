@@ -84,8 +84,8 @@ header {
 .navbar-nav a {
   text-decoration: none;
 }
-.navbar-header {
-  margin: 0 80px;
+.container .navbar-header {
+  margin-left: 80px;
  }
 a, a:focus {
   color:#000;
@@ -455,6 +455,9 @@ section#guide .post-list {
 @media (min-width: 992px) and (max-width: 1199px) {
  .wrapper {
   margin-top: 242px;
+  }
+  .container .navbar-header {
+    margin-left: 60px;
   }
   section#news .post-list {
     margin-bottom: 0;

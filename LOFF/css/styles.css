@@ -466,8 +466,9 @@ section#guide .post-list {
  .wrapper {
   margin-top: 320px;
  }
- .navbar-header a {
-  margin: 0 30%;
+ .navbar-header {
+  float: none;
+  margin: 0 auto;
  }
  .new-post  {
   width: 33.33%;

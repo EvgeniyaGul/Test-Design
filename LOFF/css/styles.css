@@ -84,6 +84,9 @@ header {
 .navbar-nav a {
   text-decoration: none;
 }
+.navbar-header {
+  margin: 0 80px;
+ }
 a, a:focus {
   color:#000;
   text-decoration:underline;
@@ -100,9 +103,18 @@ nav {
 nav .container {
   position:relative;
 }
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+}
+.navbar .navbar-collapse {
+    text-align: center;
+}
 .navbar-brand {
-  height: 94px;
-  padding: 15px 95px;
+  float: none;
+}
+.navbar-brand img {
+  margin: 0 auto;
 }
 #header-nav {
   color: #fff;
@@ -112,19 +124,16 @@ nav .container {
 }
 #header-nav ul {
   font-family: 'HypatiaSansPro';
-  margin-bottom: 0;
 }
 #header-nav li {
-  display: table-cell;
   vertical-align: middle;
-  height: 94px;
+  text-align: center;
 }
 .navbar-default .navbar-nav > li > a {
   font-size: 20px;
   line-height: 24px;
   height: 100%;
   color: #fff;
-  padding-top: 35px;
 }
 .navbar-default .navbar-nav > li > a:hover {
   background: #fff;
@@ -536,10 +545,10 @@ section#news .post-list {
   }
   .left, .post-object-2 {
   padding-right: 15px;
+  margin-bottom: 15px;
   }
   .center {
   padding-left: 15px;
-  padding-top: 15px;  
   }
   /*.post-object-2 {
   padding-left: 25px;
@@ -564,11 +573,12 @@ section#news .post-list {
     padding: 0px 16px;
     font-size: 14px;
   }
-  .post-object, .post-list .right {
+  section#news .post-object, .post-list .right {
     margin-right: 0;
   }
   section#news .post-list .right {
     margin-left: 0;
+    margin-right: 0;
   }
   .post-object .number {
     font-size: 130px;

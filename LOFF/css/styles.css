@@ -52,7 +52,7 @@ body {
 section {
   margin-bottom: 80px;
 }
-section .container {
+section .container, section .container-fluid {
   background-color: #fff;
 }
 h1 {
@@ -99,10 +99,12 @@ a:hover {
 }
 nav {
   position:relative;
-  margin-bottom:20px;
 }
 nav .container {
   position:relative;
+}
+.navbar {
+  margin-bottom: 0;
 }
 .navbar .navbar-nav {
     display: inline-block;
@@ -125,6 +127,7 @@ nav .container {
 }
 #header-nav ul {
   font-family: 'HypatiaSansPro';
+  vertical-align: bottom;
 }
 #header-nav li {
   vertical-align: middle;
@@ -200,7 +203,7 @@ section#news .right {
 }
 section#news .post-list {
   padding: 0;
-  margin-top: 33px;
+  margin-top: 15px;
   margin-bottom: 15px;
   margin-left: 10px;
 }
@@ -433,6 +436,9 @@ section#guide .photo-1 {
   text-align: left;
   padding: 10px 0px;
 }
+section#guide h1, section#guide .lead, section#guide .goTo {
+  background-color: #fff;
+}
 section#guide .text {
   font-family: 'MinionProReg';
   font-size: 14px;
@@ -443,6 +449,8 @@ section#guide .text {
 }
 section#guide .post-list {
   padding-bottom: 15px;
+  margin-left: -90px;
+  margin-right: -90px;
 }
 /* END MAIN CONTENT */
 
@@ -456,7 +464,7 @@ section#guide .post-list {
     margin-left: 15px;
   }
  #header-nav ul {
-  height: 103px;
+  height: 104px;
  }
  #header-nav li {
   display: table;
@@ -479,7 +487,7 @@ section#guide .post-list {
     overflow: visible;
   }
  #header-nav ul {
-  height: 103px;
+  height: 110px;
   }
   #header-nav li {
   display: table;
@@ -501,6 +509,9 @@ section#guide .post-list {
   }
   section#news .title {
   margin: 15px 10px 0px 10px;
+  }
+  .new-post-big-2 .right {
+    margin-left: 15px;
   }
   .details {
     margin-bottom: 15px;

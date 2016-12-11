@@ -75,12 +75,19 @@ h2 {
 }
 /** HEADER **/
 header {
+  
+  background-color: #f0f5f8;
+}
+.default {
+  position: relative;
+  width: 100%;
+} 
+.fixed {
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 100;
-  background-color: #f0f5f8;
-} 
+}
 .navbar-nav a {
   text-decoration: none;
 }
@@ -154,7 +161,7 @@ nav .container {
   margin: 15px 10px;
 }
 .wrapper {
-  margin-top: 262px;
+  margin-top: 30px;
 }
 section#news h1 {
   font-family: 'MinionPro';
@@ -508,9 +515,6 @@ section#guide .post-list {
   display: table-cell;
   vertical-align: middle;
  }
-  .wrapper {
-  margin-top: 242px;
-  }
   .container .navbar-header {
     margin-left: 60px;
   }
@@ -536,9 +540,6 @@ section#guide .post-list {
 }
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
- .wrapper {
-  margin-top: 270px;
- }
  .navbar-header {
   float: none;
   margin: 0 auto;
@@ -623,9 +624,6 @@ section#guide .post-list {
     padding: 10px;
     font-size: 35px;
   }
- .wrapper {
-  margin-top: 264px;
- }
  #header-nav ul {
   width: 100%;
   }
@@ -676,9 +674,6 @@ section#news .post-list {
 @media (max-width: 479px) {
   h1 {
     padding: 10px;
-  }
-  .wrapper {
-  margin-top: 234px;
   }
   .lead {
     padding: 0px 16px;

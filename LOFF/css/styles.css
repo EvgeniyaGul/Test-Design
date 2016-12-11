@@ -84,9 +84,10 @@ header {
 .navbar-nav a {
   text-decoration: none;
 }
-.container .navbar-header {
-  margin-left: 80px;
- }
+.navbar-toggle {
+  float: none;
+  margin: 10px auto;
+}
 a, a:focus {
   color:#000;
   text-decoration:underline;
@@ -196,7 +197,6 @@ section#news .post-object {
 }
 section#news .right {
   margin-right: 25px;
-  margin-left: 15px;
 }
 section#news .post-list {
   padding: 0;
@@ -449,57 +449,148 @@ section#guide .post-list {
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {
- 
+ .container .navbar-header {
+  margin-left: 80px;
+  }
+  .new-post-big-2 .right {
+    margin-left: 15px;
+  }
+ #header-nav ul {
+  height: 103px;
+ }
+ #header-nav li {
+  display: table;
+  height: 100%;
+ }
+ #header-nav li a {
+  display: table-cell;
+  vertical-align: middle;
+ }
+ section#news .title {
+  margin: 15px 10px 0px 10px;
+  }
 }
 /********** Medium devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
- .wrapper {
+  .container .navbar-header {
+  margin-left: 80px
+  }
+  .row {
+    overflow: visible;
+  }
+ #header-nav ul {
+  height: 103px;
+  }
+  #header-nav li {
+  display: table;
+  height: 100%;
+ }
+ #header-nav li a {
+  display: table-cell;
+  vertical-align: middle;
+ }
+  .wrapper {
   margin-top: 242px;
   }
   .container .navbar-header {
     margin-left: 60px;
   }
   section#news .post-list {
-    margin-bottom: 0;
-    margin-top: 18px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+  section#news .title {
+  margin: 15px 10px 0px 10px;
+  }
+  .details {
+    margin-bottom: 15px;
+  }
+  section#symbiosis .row, section#exposure .row, section#expedition .row, section#guide .row {
+  overflow: hidden;
   }
 }
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
  .wrapper {
-  margin-top: 320px;
+  margin-top: 270px;
  }
  .navbar-header {
   float: none;
   margin: 0 auto;
  }
+  #header-nav ul {
+  width: 100%;
+  }
+  #header-nav li {
+  float: none;
+  display: inline-block;
+  height: 100%;
+ }
+ .title {
+  margin: 15px 10px 0px 10px;
+ }
  .new-post  {
   width: 33.33%;
   float: left;
   overflow: hidden;
+  padding-bottom: 18px;
   margin-top: 15px;
-  margin-bottom: 15px;
   } 
   .new-post-big {
   width: 66.66%;
+  margin-top: 15px;
   overflow: hidden;
  }
   .new-post-big-2 {
   width: 66.66%;
   clear: both;
   margin: 15px 18%;
+  padding: 16px;
   overflow: hidden;
 }
-section#news .post-list {
-    margin-bottom: 0;
-    margin-top: 18px;
+  .right {
+  padding-left: 15px;
+  overflow: hidden;
   }
-section#experience .right {
-  margin: 15px 25%;
-}
-.col-xs-12, .col-sm-6 {
+  .left {
+  padding-right: 15px;
+  }
+  .left, .center {
+  margin-top: 15px;
   overflow: hidden;
- }
+  }
+  section#news .post-list {
+    margin-bottom: 15px;
+    margin-top: 0;
+    }
+  section#news .post-list .right {
+    margin-right: 15px;
+    margin-left: 0;
+  }
+  section#experience .post-list .right, section#symbiosis .post-list .right {
+    margin: 15px 25%;
+  }
+  section#experience .details .right:last-child {
+    margin: 0;
+  }
+  .post-object-2 {
+    padding-right: 15px;
+   }
+  .photo-details {
+    margin-top: 15px;
+  }
+  section#exposure .post-list .left {
+    margin-top: 0;
+  }
+  section#exposure .details .left {
+    margin-top: 15px;
+  }
+  section#expedition .post-list {
+    margin-top: 15px;
+  }
+  section#guide .right {
+    margin-top: 15px;
+  }
 }
 /********** Extra small devices only **********/
 @media (max-width: 767px) {
@@ -510,12 +601,11 @@ section#experience .right {
  .wrapper {
   margin-top: 264px;
  }
+ #header-nav ul {
+  width: 100%;
+  }
  .navbar-brand {
   clear: both;
- }
- .navbar-header button#navbarToggle {
-  clear: both;
-  margin: 15px 45%;
  }
  .new-post  {
   width: 100%;
@@ -538,11 +628,6 @@ section#news .post-list {
     margin-bottom: 0;
     margin-top: 18px;
   }
-  /**
- section#experience .right {
-  margin: 15px 0;
-  padding-left: 25px;
-} **/
   .right {
   padding-left: 15px;
   padding-top: 15px;
@@ -554,9 +639,6 @@ section#news .post-list {
   .center {
   padding-left: 15px;
   }
-  /*.post-object-2 {
-  padding-left: 25px;
-  }*/
   .col-xs-12, .col-sm-6 {
   overflow: hidden;
  }

@@ -574,9 +574,6 @@ section#guide .post-list {
   display: block;
   height: 100%;
  }
- #header-nav .navbar-nav .dropdown-menu a {
-  padding: 10px 0px 10px 10px;
- } 
  .title {
   margin: 15px 10px 0px 10px;
  }

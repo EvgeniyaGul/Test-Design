@@ -3,10 +3,6 @@
     src: url('../fonts/Hypatia-Sans-Pro.ttf'); 
 }
 @font-face {
-    font-family: 'MinionPro';
-    src: url('../fonts/Minion Pro.ttf'); 
-}
-@font-face {
     font-family: 'MinionProCN';
     src: url('../fonts/minionpro-cndisp.otf'); 
 }
@@ -56,7 +52,7 @@ section .container, section .container-fluid {
   background-color: #fff;
 }
 h1 {
-  font-family: 'MinionPro';
+  font-family: 'MinionProReg';
   font-size: 50px;
   line-height: 50px;
   letter-spacing: 3.5px;
@@ -75,7 +71,6 @@ h2 {
 }
 /** HEADER **/
 header {
-  
   background-color: #f0f5f8;
 }
 .default {
@@ -126,6 +121,23 @@ nav .container {
 .navbar-brand img {
   margin: 0 auto;
 }
+#header-nav .navbar-nav .dropdown-menu {
+  color: #fff;
+  background-color: #000;
+  border: none;
+  border-radius: 0;
+  padding: 0 0 5px 0;
+  margin: 0 0 0 5px;
+  min-width: 139px;
+}
+#header-nav .navbar-nav .dropdown-menu li {
+  float: none;
+  display: block;
+  height: 100%;
+}
+#header-nav .navbar-nav .dropdown-menu a {
+  display: block;
+}
 #header-nav {
   color: #fff;
   background-color: #000;
@@ -136,23 +148,25 @@ nav .container {
   font-family: 'HypatiaSansPro';
   vertical-align: bottom;
 }
-#header-nav li {
+#header-nav .navbar-nav > li {
   vertical-align: middle;
   text-align: center;
 }
-.navbar-default .navbar-nav > li > a {
+.navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav .dropdown-menu > li > a {
   font-size: 20px;
   line-height: 24px;
   height: 100%;
   color: #fff;
-}
-.navbar-default .navbar-nav > li > a:hover {
+  padding: 10px;
+} 
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav .dropdown-menu > li > a:hover {
   background: #fff;
+  color: #000;
 }
-.navbar-default .navbar-nav > li > a:focus {
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav .dropdown-menu > li > a:focus {
   color: #fff;
 }
-.navbar-default .navbar-nav > li > a:focus:hover {
+.navbar-default .navbar-nav > li > a:focus:hover, .navbar-default .navbar-nav .dropdown-menu > li > a:focus:hover {
   color: #000;
 }
 /* END HEADER */
@@ -164,7 +178,7 @@ nav .container {
   margin-top: 30px;
 }
 section#news h1 {
-  font-family: 'MinionPro';
+  font-family: 'MinionProReg';
   font-size: 50px;
   line-height: 30px;
   letter-spacing: 3.5px;
@@ -271,7 +285,7 @@ section#news .new-post-big-2 .right {
   position: absolute;
   bottom: 0;
   left: 10px;
-  font-family: 'MinionPro';
+  font-family: 'MinionProReg';
   font-size: 22px;
   text-transform: uppercase;
   font-weight: bold;
@@ -285,7 +299,7 @@ section#news .new-post-big-2 .right {
   padding-top: 17px;
 }
 .new-place {
-  font-family: 'MinionPro';
+  font-family: 'MinionProReg';
   font-size: 13.5px;
   line-height: 22px;
   text-transform: uppercase;
@@ -481,7 +495,7 @@ section#guide .post-list {
   .new-post-big-2 .row {
     overflow: visible;
   }
- #header-nav ul {
+ #header-nav #collapsable-nav > ul {
   height: 104px;
  }
  #header-nav li {
@@ -504,7 +518,7 @@ section#guide .post-list {
   .row {
     overflow: visible;
   }
- #header-nav ul {
+ #header-nav #collapsable-nav > ul {
   height: 110px;
   }
   #header-nav li {
@@ -544,14 +558,25 @@ section#guide .post-list {
   float: none;
   margin: 0 auto;
  }
-  #header-nav ul {
-  width: 100%;
-  }
-  #header-nav li {
+ .navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav .dropdown-menu > li > a {
+  font-size: 18px;
+  line-height: 22px;
+ }
+  #header-nav .navbar-nav > li {
   float: none;
   display: inline-block;
+ }
+  #header-nav .navbar-nav .dropdown-menu {
+  min-width: 127.67px;
+}
+ #header-nav .navbar-nav .dropdown-menu li {
+  float: none;
+  display: block;
   height: 100%;
  }
+ #header-nav .navbar-nav .dropdown-menu a {
+  padding: 10px 0px 10px 10px;
+ } 
  .title {
   margin: 15px 10px 0px 10px;
  }
@@ -627,6 +652,16 @@ section#guide .post-list {
  #header-nav ul {
   width: 100%;
   }
+  .navbar-default .navbar-nav .open .dropdown-menu>li>a {
+  color: #fff; 
+  }
+ .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
+  color: #000;
+  background-color: #fff;
+  }
+  #header-nav .navbar-nav .dropdown-menu {
+  margin: 0;
+  }
  .navbar-brand {
   clear: both;
  }
@@ -669,7 +704,6 @@ section#news .post-list {
     padding: 0;
   }
 }
-
 /********** Super extra small devices Only (e.g., iPhone 4) **********/
 @media (max-width: 479px) {
   h1 {

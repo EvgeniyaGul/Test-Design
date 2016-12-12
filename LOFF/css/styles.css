@@ -127,8 +127,7 @@ nav .container {
   border: none;
   border-radius: 0;
   padding: 0 0 5px 0;
-  margin: 0 0 0 5px;
-  min-width: 139px;
+  min-width: 230px;
 }
 #header-nav .navbar-nav .dropdown-menu li {
   float: none;
@@ -151,6 +150,7 @@ nav .container {
 #header-nav .navbar-nav > li {
   vertical-align: middle;
   text-align: center;
+  padding: 0;
 }
 .navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav .dropdown-menu > li > a {
   font-size: 20px;
@@ -168,6 +168,20 @@ nav .container {
 }
 .navbar-default .navbar-nav > li > a:focus:hover, .navbar-default .navbar-nav .dropdown-menu > li > a:focus:hover {
   color: #000;
+}
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover {
+  background: #fff;
+  color: #000;
+}
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+  background: #fff;
+  color: #000;
+}
+.navbar-default .navbar-nav .dropdown-menu > li > a:focus {
+  color: #000;
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
 }
 /* END HEADER */
 /* MAIN CONTENT */
@@ -566,9 +580,6 @@ section#guide .post-list {
   float: none;
   display: inline-block;
  }
-  #header-nav .navbar-nav .dropdown-menu {
-  min-width: 127.67px;
-}
  #header-nav .navbar-nav .dropdown-menu li {
   float: none;
   display: block;

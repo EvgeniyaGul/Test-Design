@@ -126,7 +126,7 @@ nav .container {
   background-color: #000;
   border: none;
   border-radius: 0;
-  padding: 0 0 5px 0;
+  padding: 0;
   min-width: 230px;
 }
 #header-nav .navbar-nav .dropdown-menu li {
@@ -167,6 +167,7 @@ nav .container {
   color: #fff;
 }
 .navbar-default .navbar-nav > li > a:focus:hover, .navbar-default .navbar-nav .dropdown-menu > li > a:focus:hover {
+  background: #fff;
   color: #000;
 }
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover {
@@ -519,6 +520,9 @@ section#guide .post-list {
  #header-nav li a {
   display: table-cell;
   vertical-align: middle;
+ }
+ .navbar-default .navbar-nav > li > a {
+  padding: 20px;
  }
  section#news .title {
   margin: 15px 10px 0px 10px;

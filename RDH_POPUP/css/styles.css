@@ -369,7 +369,7 @@ nav .container {
 
 /* END HEADER */
 /* MAIN CONTENT */
-section#main-posts:first-of-type { /* отступ первой секции от меню*/
+.main-posts:first-of-type { /* отступ первой секции от меню*/
   margin-top: 125px;
 }
 .title {
@@ -426,7 +426,7 @@ section#main-posts:first-of-type { /* отступ первой секции о�
   min-width: 300px;
   margin-bottom: 25px;
 }
-#main-posts .banner-popular h2 {
+.main-posts .banner-popular h2 {
   text-align: center;
   letter-spacing: 3px;
   color: #fff;
@@ -456,10 +456,10 @@ section#main-posts:first-of-type { /* отступ первой секции о�
 .popular-text a {
   text-decoration: none;
 }
-#main-posts .banner-popular li:hover {
+.main-posts .banner-popular li:hover {
   background-color: #122ded;
 }
-#main-posts .banner-popular, #posts .banner-news {
+.main-posts .banner-popular, #posts .banner-news {
   background-color: #eeeeef;
 }
 .popular-1 {
@@ -922,7 +922,7 @@ section#subscription .container, section#classic .container, .panel-footer .cont
  .menu {
   background-position: -20px;
  }
- .banner, .gallery {
+ .gallery {
   float: right;
  }
 }
@@ -938,7 +938,7 @@ section#subscription .container, section#classic .container, .panel-footer .cont
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
  /* Home Page */
-section#main-posts:first-of-type {
+.main-posts:first-of-type {
   margin-top: 208px;
 }
 .menu-main h2 {
@@ -1000,7 +1000,7 @@ section#classic img {
 /********** Extra small devices only **********/
 @media (max-width: 767px) {
   /* Home Page */
-section#main-posts:first-of-type {
+.main-posts:first-of-type {
   margin-top: 290px;
 }
 .date, .object {
@@ -1082,7 +1082,7 @@ section#classic img {
 /********** Super extra small devices Only (e.g., iPhone 4) **********/
 @media (max-width: 479px) {
   /* Home Page */
-  section#main-posts:first-of-type {
+  .main-posts:first-of-type {
     margin-top: 225px;
   }
   .date, .object {

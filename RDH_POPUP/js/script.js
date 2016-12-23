@@ -67,13 +67,13 @@ $(window).load(function() {
 
 
 
-					if ( rightblock.height() - window_top <= w_height )
+					if ( rightblock.height() - window_top + el_top <= w_height )
 					{
 						//var container = rightblock.parents('.container')||$('.container:first'); //я убрала
 						//var right_position = container.offset().left + container.width() - rightblock.width()+15;//я убрала
 						
 						//rightblock.css({position:'fixed', top: top_position, 'left':right_position, 'right':'auto'})
-						rightblock.css({position:'fixed', bottom: 0, 'right':'auto'}) //добавлено
+						rightblock.css({position:'fixed', top: -750, 'right':'auto'}) //добавлено
 						
 						console.log('блок в окне')
 					}

@@ -634,7 +634,16 @@ section#posts .posts-list div:nth-child(odd){
   clear: both;
 }
 /** end of banner-2 **/
-
+.rightblock {
+  position: relative;
+}
+/*.sticked {
+  position: absolute;
+  bottom: 0;
+}*/
+.clear {
+  clear: both;
+}
 section#classic {
   background-color: #122ded;
 }

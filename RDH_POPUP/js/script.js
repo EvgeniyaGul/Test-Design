@@ -56,17 +56,6 @@ $(window).load(function() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 					if ( rightblock.height() - window_top + el_top <= w_height )
 					{
 						//var container = rightblock.parents('.container')||$('.container:first'); //я убрала
@@ -86,8 +75,8 @@ $(window).load(function() {
 						//var right_position = container.offset().left + container.width() - rightblock.width()+15;//я убрала
 						
 						//rightblock.css({position:'fixed', top: top_position, 'left':right_position, 'right':'auto'})
-						var top_absolute = 
-						rightblock.css({position:'absolute', top: rightblock_top - el_top, 'right':'auto'}) //добавлено
+						var top_absolute = 0; 
+						rightblock.css({position:'absolute', top: el_bottom - el_top - rightblock.height(), 'right':'auto'}) //добавлено
 						
 						console.log('блок ушел вверх')
 					}
@@ -113,6 +102,7 @@ $(window).load(function() {
 						
 						console.log('блок ушел наверх')
 					}*/
+					
 					
 
                 }

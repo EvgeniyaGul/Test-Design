@@ -35,7 +35,7 @@ $(function() {
 					var w_height = $(window).height() //добавлено
 					
 					//console.log('el_top = '+el_top+'; el_bottom='+el_bottom);
-					//console.log('rightblock = '+rightblock_top + '; rightblock_bottom = '+rightblock_bottom);
+					//console.log('rightblock_top = '+rightblock_top + '; rightblock_bottom = '+rightblock_bottom);
                     //console.log('window_top = '+window_top+'; window_bottom='+window_bottom)
 
 					//console.log('w_height = ' + w_height);
@@ -47,17 +47,14 @@ $(function() {
 						var container = rightblock.parents('.container')||$('.container:first');
 						var right_position = container.offset().left + container.width() - rightblock.width() + 15;
 						var top_fixed = rightblock_top - window_top;
-						//var top_fixed = window_bottom - window_top - rightblock_top; 
 
 						rightblock.css({position:'fixed', top: top_fixed, 'left': right_position, 'right':'auto'}) 
-						console.log('блок в окне')
+						//console.log('блок в окне')
 					}
 
-					//if ( el_bottom - window_top <= w_height )
-					if ( rightblock_top - w_height >= rightblock.height() || el_bottom - window_top <= w_height)
+					if ( el_bottom - window_top <= w_height)
 					{
 						var top_absolute = el_bottom - el_top - rightblock.height(); 
-						//var top_absolute = rightblock_top - window_top - el_top;
 						
 						rightblock.css({position:'absolute', top: top_absolute, 'right': 15, 'left':'auto'}) //добавлено
 						//console.log('блок ушел вверх')
@@ -71,14 +68,22 @@ $(function() {
 
 					//для высоты баннера меньше высоты окна
 
-					if ( rightblock.height() <= w_height && (  el_bottom - window_top + el_top >= w_height ))
+					if ( ( rightblock.height() <= w_height && rightblock_top - window_top > el_top ) || ( rightblock.height() <= w_height && el_bottom - rightblock_top > rightblock.height() ))
 					{
 						rightblock.css({position:'absolute', top: window_top, 'right': 15, 'left':'auto'}) //добавлено
 						//console.log('блок рядом с контентом_2')
 
 					}
+					if ( rightblock.height() <= w_height && (  el_bottom - window_top - el_top < rightblock.height() ))
+					{
+						var top_absolute = el_bottom - el_top - rightblock.height();  
 
+						rightblock.css({position:'absolute', top: top_absolute, 'right': 15, 'left':'auto'}) //добавлено
+						//console.log('блок ушел вверх_2')
 
+					}
+
+					
 					
                 }
             })

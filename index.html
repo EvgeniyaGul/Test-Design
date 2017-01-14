@@ -1,532 +1,450 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+    <title>Design</title>
+    <link rel='stylesheet' type='text/css' href='css/reset.css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel='stylesheet' href='css/bootstrap.min.css'>
+    <link rel='stylesheet' href='css/main.css'>
+
+    <!--jQuery Core Library-->
+    <script src="https://code.jquery.com/jquery-1.12.2.min.js" integrity="sha256-lZFHibXzMHo3GGeehn1hudTAP3Sc0uKXBXAzHX1sjtk=" crossorigin="anonymous"></script> 
+    <!--Bootstrap JS-->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   </head>
-<body>
-  <header>
-    <nav id="header-nav" class="navbar navbar-default">
-      <div class="container">
-        <div class="navbar-header">
-          <div class="col-xs-2 col-sm-2 col-md-1">
-          <div class="menu">
-          <a href="#modal-nav" data-toggle="modal"><div></div></a>
-          </div>
-          </div>
-          <div class="col-xs-10 col-sm-10 col-md-2">
-          <a href="index.html"><div class="logo-img"></a>
-          </div>
-          </div>
-          <div class="right col-xs-12 col-sm-6 col-md-5">
-          <ul class="list-unstyled">
-          <li class="interni-logo"><a href="#"></a>
-          </li>
-          <li class="object-logo"><a href="#"></a>
-          </li>
-          </ul>
-          </div>
-          <div class="col-xs-11 col-sm-5 col-md-3">
-          <ul class="list-unstyled menu-main">
-          <li><a href="index.html"><h2>новое</h2></a>
-          </li>
-          <li><a href="index.html"><h2>топ</h2></a>
-          </li>
-          <li><a href="index.html"><h2>события</h2></a>
-          </li>
-          </ul>
-          </div>
-
-          <div class="col-xs-1 col-sm-1 col-md-1">
-          <form class="navbar-form pull-right" role="search">
-            <div id="input-group">
-              <input type="text" class="form-control" placeholder="Поиск">
-            </div>
-            <a href="#input-group" type="submit" class="btn btn-default search">
-              <img src="img/search.png" class="img-responsive" alt="">
+  <body ng-app="journal-app" ng-strict-di>
+    
+    <header>
+      <nav id="header-nav" class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <a href="index.html" class="visible-xs visible-sm visible-md visible-lg">
+              <div id="logo-img">
+                <img class="img-responsive" src="../img/banner.png" alt="OK!">
+              </div>
             </a>
-          </form>
+
+            <button id="navbarToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
           </div>
 
-        </div><!--navbar-header-->
-      </div><!-- .container -->
-    </nav><!-- #header-nav -->
-  </header>
-
-
-  <!-- Modal Nav-->
-  <div id="modal-nav" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-          <ul class="list-unstyled socials">
-            <li>
-              <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="img/close-nav.png" class="img-responsive" alt=""></button>
-            </li>
-            <li>
-              <img src="img/post-nav.png" class="img-responsive" alt="">
-            </li>
-            <li>
-              <img src="img/social-nav.png" class="img-responsive" alt="">
-            </li>
-             <li>
-              <img src="img/fb-nav.png" class="img-responsive" alt="">
-            </li>
-             <li>
-              <img src="img/tw-nav.png" class="img-responsive" alt="">
-            </li>
-             <li>
-              <img src="img/inst-nav.png" class="img-responsive" alt="">
-            </li>
-             <li>
-              <img src="img/vk-nav.png" class="img-responsive" alt="">
-            </li>
-          </ul>
-        
-        <ul id="nav-list" class="nav navbar-nav">
-          <li>
-            <img src="img/photo-nav.png" class="img-responsive photo-nav" alt="">
-            <span>Студенты летней школы разработают план развития Шаболовки</span>
-          </li>
-          <li>
-            <a href="#">Арт</a>
-          </li>
-          <li>
-            <a href="#">Архитектура</a>
-          </li>
-          <li>
-            <a href="#">Интерьеры</a>
-          </li>
-          <li>
-            <a href="#">Дизайн</a>
-          </li>
-          <li>
-            <a href="#">Интервью</a>
-          </li>
-          <li>
-            <a href="#">События</a>
-          </li>
-          <li>
-            <a href="#">Энциклопедия</a>
-          </li>
-          <li class="devider">
-          </li>
-          <li>
-            <a href="#">О проекте</a>
-          </li>
-          <li>
-            <a href="#">Скачать INTERNI</a>
-          </li>
-          <li>
-            <a href="#">Скачать OBJECT</a>
-          </li>
-          <li>
-            <a href="#">КОНТАКТЫ</a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="img/social-icons-nav.png" class="img-responsive" alt="">
-            </a>
-          </li>
-        </ul><!-- #nav-list -->
-        <div class="socials-nav"></div>
-      </div><!--modal-content-->
-    </div><!--modal-dialog-->
-  </div><!--Modal Nav-->
-
-  <section id="main-posts">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12 col-sm-8">
-          <div class="post-object">
-            <a href="#">
-              <img src="img/provance.png" class="img-responsive" alt='Как оформить дом в стиле "прованс": практические советы'>
-              <span class="object">Архитектура</span>
-              <span class="date">30 июня 2016</span>
-              <span class="title">Как оформить дом в стиле "прованс": практические советы</span>
-            </a>
-          </div>
-          <div class="post-object">
-            <a href="#">
-              <img src="img/exhibition.png" class="img-responsive" alt='Премия INTERNI AWARDS 2016 стартует в июле'>
-              <span class="object">Архитектура</span>
-              <span class="date">30 июня 2016</span>
-              <span class="title">Премия INTERNI AWARDS 2016 стартует в июле</span>
-            </a>
-          </div>
-          <div class="post-object">
-            <a href="#">
-              <img src="img/festival.png" class="img-responsive" alt='Фестиваль ландшафтного дизайна Moscow Flower Show-2016 объявил программу'>
-              <span class="object">Архитектура</span>
-              <span class="date">30 июня 2016</span>
-              <span class="title">Фестиваль ландшафтного дизайна Moscow Flower Show-2016 объявил программу</span>
-            </a>
-          </div>
-        </div>
-          
-        <div class="banner banner-popular col-xs-12 col-sm-4">
-              <h2>Популярное</h2>
-                <ul class="list-unstyled">
-                <li><a href="#" alt="">За неделю</a></li>
-                <li><a href="#" alt="">Месяц</a></li>
-                <li><a href="#" alt="">Все время</a></li>
-                </ul>
-                <div class="popular-1"></div>
-                <div class="text">В Сколково с 29 июня по 1 июля пройдет дизайн-хакатон</div>
-                <div class="shares-1">125 shares</div>
-                <div class="text">Искусство по доступным ценам: в студии КОП пройдет Арт-Маркет</div>
-                <div class="shares-1">125 shares</div>
-                <div class="text">Лекция "Обучающая архитекторов, переосмысливая архитектуру" 22 мая в ЦДХ</div>
-                <div class="shares-1">75 shares</div>
-                <div class="text">Кинофестиваль "Living Architectures" впервые пройдет в Москве</div>
-                <div class="shares-1">125 shares</div>
-        </div>
-        <div class="banner col-xs-12 col-sm-4">
-              <div class="popular-2"></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="subscription">
-    <div class="container">
-      <div class="row">
-          <img src="img/section-1.png" class="img-responsive" alt=''>
-          <div class="col-md-5 subs">
-          <h2>Самое актуальное от RDH</h2>
-          <span>Ежемесячная подписка на новости от RUSSIAN DESIGN HUB</span>
-          <ul class="list-unstyled">
-          <li>
-          <input class="subscribe-input" type="text" name="subscribe-input" placeholder="Ваш e-mail">
-          </li>
-          <li><a href="#" class="btn btn-default"><img src="img/arrow.png" class="img-responsive" alt=''></a>
-          </li>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="posts">
-   <div class="container">
-      <div class="row">
-        <div class="col-xs-12 col-sm-8">
-     <div class="container">
-      <div class="row">
-        <div class="col-xs-12 col-sm-4">
-              <div class="post post-object">
-                <a href="#">
-                  <img src="img/arhiwood-posts.png" class="img-responsive" alt="Названы победители премии АРХИWOOD-2016">
-                  <span class="object">Архитектура</span>
-                  <span class="date">30 июня 2016</span>
-                </a>
-                  <span class="text">Названы победители премии АРХИWOOD-2016</span>
-              </div>
-        </div>
-        <div class="col-xs-12 col-sm-4">
-              <div class="post post-object">
-                <a href="#">
-                  <img src="img/cinema-posts.png" class="img-responsive" alt='Кинофестиваль "Living Architectures" впервые пройдет в Москве'>
-                  <span class="object">Дизайн</span>
-                  <span class="date">30 июля 2016</span>
-                  <span class="text">Кинофестиваль "Living Architectures" впервые пройдет в Москве</span>
-                </a>
-              </div>
-        </div>
-      </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12 col-sm-4">
-              <div class="post post-object">
-                <a href="#">
-                  <img src="img/bienalle-posts.png" class="img-responsive" alt='Московская Биеналле Архитектуры пройдет с 18 по 22 мая в ЦДХ'>
-                  <span class="object">Архитектура</span>
-                  <span class="date">30 июня 2016</span>
-                  <span class="text">Московская Биеналле Архитектуры пройдет с 18 по 22 мая в ЦДХ</span>
-                </a>
-              </div>
-          </div>
-        <div class="col-xs-12 col-sm-4">
-              <div class="post post-object">
-                <a href="#">
-                  <img src="img/ikea-posts.png" class="img-responsive" alt='Известные фотографы создали арт-коллекцию для ИКЕА'>
-                  <span class="object">Архитектура</span>
-                  <span class="date">30 июня 2016</span>
-                  <span class="text">Известные фотографы создали арт-коллекцию для ИКЕА</span>
-                </a>
-              </div>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-        <div class="row">
-          <div class="col-xs-12 col-sm-4">
-              <div class="post post-object">
-                <a href="#">
-                  <img src="img/bolshevik-posts.png" class="img-responsive"alt='На территории фабрики "Большевик" откроется музей русского импрессионизма'>
-                  <span class="object">Архитектура</span>
-                  <span class="date">30 июня 2016</span>
-                  <span class="text">На территории фабрики "Большевик" откроется музей русского импрессионизма</span>
-                </a>
-              </div>
-          </div>
-          <div class="col-xs-12 col-sm-4">
-              <div class="post post-object">
-                <a href="#">
-                  <img src="img/batimat-posts.png" class="img-responsive" alt='Посещаемость выставки BATIMAT RUSSIA побила рекорды'>
-                  <span class="object">Дизайн</span>
-                  <span class="date">30 июля 2016</span>
-                  <span class="text">Посещаемость выставки BATIMAT RUSSIA побила рекорды</span>
-                </a>
-              </div>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12 col-sm-4">
-              <div class="post post-object">
-                <a href="#">
-                  <img src="img/gorenje-posts.png" class="img-responsive" alt='Рациональный дом от Gorenje на фестивале Art.Up Art.In'>
-                  <span class="object">Дизайн</span>
-                  <span class="date">30 июля 2016</span>
-                  <span class="text">Рациональный дом от Gorenje на фестивале Art.Up Art.In</span>
-                </a>
-              </div>
-          </div>
-          <div class="col-xs-12 col-sm-4">
-            <div class="post post-object">
-                <a href="#">
-                  <img src="img/heating-posts.png" class="img-responsive" alt='Журнал OBJECT расскажет о новых технологиях обогрева помещений'>
-                  <span class="object">Дизайн</span>
-                  <span class="date">30 июля 2016</span>
-                  <span class="text">Журнал OBJECT расскажет о новых технологиях обогрева помещений</span>
-                </a>
-              </div>
-        </div>
-      </div>
-      </div>
-    </div>
-
-        <div class="banner banner-news col-xs-12 col-sm-4">
-          <h2>Свежие новости</h2>
-            <ul class="list-unstyled">
-            <li class="span-1">
-              <div class="news new-1"></div><span >Работа будущего: 10 навыков, которые будут востребованы в 2020 году</span>
-            </li>
-            <li>
-              <div class="news new-2"></div><span class="span-2">10 профессий, в которых самый высокий процент психопатов</span>
-            </li>
-            <li>
-              <div class="news new-3"></div><span class="span-3">Алина Фаркаш об игре... в мудаков</span>
-            </li>
-            <li>
-              <div class="news new-4"></div><span class="span-4">Алина Фаркаш о семейном насилии как источнике суперсилы</span>
-            </li>
-            <li>
-              <div class="news new-5"></div><span class="span-5">Земфира: "Я не могу полюбить плохого человека, только хорошего</span>
-            </li>
-          </ul>
-        </div>
-        <div class="banner col-xs-12 col-sm-4">
-          <a href="#">
-            <div class="banner-1"></div>
-          </a>
-        </div>
-        <div class="banner col-xs-12 col-sm-4">
-          <a href="#">
-            <div class="banner-2"></div>
-          </a>
-        </div>
-     </div>
-    </div>
-  </section>
-
-  <section id="classic">
-    <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <img src="img/classic.png" class="img-responsive" alt="">
-          </div>
-          <div class="classic-text col-md-4">
-            <h2>Классика дизайна</h2>
-            <span>Новая коллекция датской компании BoConcept сочетает в себе повседневный casual и более роскошный formal стили ...</span>
-            <a href="#" class="btn btn-default">Подробнее</a>
-          </div>
-          <div class="gallery col-md-4">
-            <img src="img/gallery.png" class="img-responsive" alt="">
-            <a href="#" class="btn btn-default">Посмотреть все</a>
-          </div>
-        </div>
-      </div>
-  </section>
-
-  <section id="main-posts">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12 col-sm-8">
-          <div class="post-object">
-            <a href="#">
-              <img src="img/exhibition.png" class="img-responsive" alt='Премия INTERNI AWARDS 2016 стартует в июле'>
-              <span class="object">Архитектура</span>
-              <span class="date">30 июня 2016</span>
-              <span class="title">Премия INTERNI AWARDS 2016 стартует в июле</span>
-            </a>
-          </div>
-          <div class="post-object">
-            <a href="#">
-              <img src="img/festival.png" class="img-responsive" alt='Фестиваль ландшафтного дизайна Moscow Flower Show-2016 объявил программу'>
-              <span class="object">Архитектура</span>
-              <span class="date">30 июня 2016</span>
-              <span class="title">Фестиваль ландшафтного дизайна Moscow Flower Show-2016 объявил программу</span>
-            </a>
-          </div>
-          </div>
-            <div id="choise" class="banner banner-choise col-xs-12 col-sm-4">
-              <h2>Выбор редакции</h2>
-                <div class="choise choise-1"></div>
-                <a href="#" class="link-hover"><div class="choise choise-2"><div id="digit">2</div></div>
-                <div class="cover"></div>
-                <span class="cover-text">Работа будущего: 10 навыков, которые будут востребованы в 2020 году</span></a>
-                <div class="choise choise-3"></div>
-                <div class="choise choise-4"></div>
-                <div class="choise choise-5"></div>
-             </div><!--banner-->
-         </div>
-        </div>
+          <div id="collapsable-nav" class="collapse navbar-collapse">
+            <ul id="nav-list" class="nav navbar-nav">
+              <li id="navHomeButton">
+                <a href="index.html">
+                  <span class="glyphicon glyphicon-home"></span></a></li>
+              <li><a href="#">Персона</a></li>
+              <li><a href="#">Новости</a></li>
+              <li><a href="#">Светская хроника</a></li>
+              <li><a href="#">Красота</a></li>
+              <li><a href="#">Мода</a></li>
+              <li><a href="#">Стиль жизни</a></li>
+              <li><a href="#">Колумнисты ОК!</a></li>
+              <li><a href="#">Кино</a></li>
+              <li><a href="#">Гороскоп</a></li>
+              <li><a href="#">Фотогалереи</a></li>
+            </ul><!-- #nav-list -->
+          </div><!-- .collapse .navbar-collapse -->
+        </div><!-- .container -->
+      </nav><!-- #header-nav -->
+    </header>
+   
+   <div id="main-content" class="container">
+     <div id="items" class="row">
+       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+         <div><h1>Номинации и номинанты</h1></div>
        </div>
-  </section>
-
-
-  <section id="posts">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12 col-sm-8">
-          <div class="container">
-          <div class="row">
-        <div class="col-xs-12 col-sm-4">
-              <div class="post post-object">
-                <a href="#">
-                  <img src="img/ikea-posts.png" class="img-responsive" alt='Известные фотографы создали арт-коллекцию для ИКЕА'>
-                  <span class="object">Архитектура</span>
-                  <span class="date">30 июня 2016</span>
-                  <span class="text">Известные фотографы создали арт-коллекцию для ИКЕА</span>
-                </a>
-              </div>
-        </div>
-        <div class="col-xs-12 col-sm-4">
-              <div class="post-object">
-                <a href="#">
-                  <img src="img/gorenje-posts.png" class="img-responsive" alt='Рациональный дом от Gorenje на фестивале Art.Up Art.In'>
-                  <span class="object">Дизайн</span>
-                  <span class="date">30 июля 2016</span>
-                  <span class="text">Рациональный дом от Gorenje на фестивале Art.Up Art.In</span>
-                </a>
-              </div>
-        </div>
-          </div>
-          </div>
-      
-          <div class="col-xs-12 col-sm-4">
-              <div class="post-object">
-                <a href="#">
-                  <img src="img/bolshevik-posts.png" class="img-responsive" alt='На территории фабрики "Большевик" откроется музей русского импрессионизма'>
-                  <span class="object">Архитектура</span>
-                  <span class="date">30 июня 2016</span>
-                  <span class="text">На территории фабрики "Большевик" откроется музей русского импрессионизма</span>
-                </a>
-              </div>
-          </div>
-        <div class="col-xs-12 col-sm-4">
-              <div class="post-object">
-                <a href="#">
-                  <img src="img/bolshevik-posts.png" class="img-responsive" alt='На территории фабрики "Большевик" откроется музей русского импрессионизма'>
-                  <span class="object">Архитектура</span>
-                  <span class="date">30 июня 2016</span>
-                  <span class="text">На территории фабрики "Большевик" откроется музей русского импрессионизма</span>
-                </a>
-              </div>
-        </div>
-      </div>
-
-        <div class="banner banner-hot col-xs-12 col-sm-4">
-          <h2>Hot now!</h2>
-          <div class="hot hot-1"> <div class="shares">125 shares</div></div>
-          <div class="text"><h3>Дизайн</h3>Инсталляция Nike на миланской неделе дизайна</div>
-          <div class="hot hot-2"><div class="shares">75 shares</div></div>
-          <div class="text"><h3>Интерьеры</h3>Светильники ко Дню космонавтики</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="download">
-    <div class="container">
-      <div class="row">
-        <ul class="list-unstyled">
-          <li class="col-md-6">
-          <img src="img/object-big.png" class="img-responsive" alt=''>
-          <div>
-          <span>Читайте прямо сейчас</span>
-          <span><h2>Скачайте новый номер в pdf</h2></span>
-          </div>
-          <div class="post-object">
-          <img src="img/object.png" class="img-responsive" alt=''>
-          </div>
-          <a href="#" class="btn btn-default">Загрузить</a>
-          </li>
-
-          <li class="col-md-6">
-            <img src="img/interni-big.png" class="img-responsive" alt=''>
-            <div>
-            <span>Читайте прямо сейчас</span>
-            <span><h2>Новый номер уже в APPSTORE</h2></span>
+       <!-- Главный герой - музыка -->
+       <div class="nomination col-xs-12 col-sm-12 col-md-12 col-lg-12">
+         <div class="nomination-title">
+           <h2>Главный герой - музыка</h2>
+         </div>
+         <div><h3>Кто завоевал сердца тысяч поклонников за эти 10 лет?<br>Кому верит зритель, слушатель, поклонник? Выберите своего главного героя!</h3></div>
+          
+            <div class="row">
+              
+              <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4"  data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="0">
+                
+                <div id="photo-1">
+                  <img class="img-responsive" src="../img/timaty.png" alt="ТИМАТИ">
+                </div>
+                <div id="text">Тимати</div></a>
             </div>
-            <div class="post-object">
-            <img src="img/interni.png" class="img-responsive" alt=''>
+
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4">
+              <div id="photo-1">
+                <img class="img-responsive" src="../img/bilan.png" alt="ДИМА БИЛАН">
+              </div>
+              <div id="text">Дима Билан</div>
             </div>
-            <a href="#" class="btn btn-default">Загрузить в APPSTORE</a>
-          </li>
-          </ul>
-        </div>
-      </div>
-  </section>
 
-  <section id="subscribe">
-    <div class="container">
-      <div class="row">
-        <ul class="list-unstyled">
-          <li class="col-sm-4 col-md-4">
-          <img src="img/object-big.png" class="img-responsive" alt=''>
-          <h2>Оформить подписку на печатную версию журнала</h2>
-          <a href="#" class="btn btn-default">Оформить</a>
-          </li>
-          <li class="col-sm-4 col-md-4">
-          <div class="post-object">
-          <img src="img/subscribe.png" class="img-responsive" alt=''>
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4">
+              <div id="photo-1">
+                <img class="img-responsive" src="../img/lazarev.png" alt="СЕРГЕЙ ЛАЗАРЕВ">
+              </div>
+              <div id="text">Сергей Лазарев</div>
+            </div>
+
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4">
+              <div id="photo-1">
+                <img class="img-responsive" src="../img/lorak.png" alt="АНИ ЛОРАК">
+              </div>
+              <div id="text">Ани Лорак</div>
+            </div>
+
+            <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+              <div id="photo-1">
+                <img class="img-responsive" src="../img/glukoza.png" alt="ГЛЮКОЗА">
+              </div>
+              <div id="text">Глюкоза</div>
+            </div>
           </div>
-          </li>
-          <li class="col-sm-4 col-md-4">
-          <img src="img/interni-big.png" class="img-responsive" alt=''>
-          <h2>Оформить подписку на печатную версию журнала</h2>
-          <a href="#" class="btn btn-default">Оформить</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-            
+       </div>
+       <!--Слайдер номинации-->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="ModalCarouselLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="false">
+    <div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" title="Close"> <span class="glyphicon glyphicon-remove"></span></button>
+</div>
 
-  <footer class="panel-footer">
+      <div class="modal-body">
+        <div class="container-fluid">
+         <div id="myGallery" class="row" >
+            <div class="carousel-inner">
+              <div id="dialog" class="slider-box nomination ">
+          
+              <div class="slider">
+                <div class="slidewrapper">
+                    <div class="slider-item item">
+                        
+                              <div><h1>Номинация: народный герой</h1></div>
+                            <div id="photo-2">
+                              <img class="img-responsive" src="../img/timaty_pers.png" alt="ТИМАТИ"></div>
+                            <div id="description">
+                              <h2>Елена Темникова</h2>
+                              <p>Елена Темникова нечасто делится совместными фотографиями дочки, но иногда радует своих подписчиков новыми снимками с дочуркой. Кажется, для певицы самое лучшее времяпрепровождение - время за игрой с Сашенькой.</p>
+                              <p>На этот раз Елена рассказала подписчикам о любимых игрушках дочки. Малышка любит свои вязаные варежки и, несмотря на весну, предпочитает их не убирать в дальний ящик. Как написала Елена, малышка надевает варежки бобру. И правда, вдруг замерзнет!</p>
+                              <div id="socials">
+                                <h3>Проголосуй за этого номинанта через социальные сети</h3>
+                                <div id="buttons">
+                                  <a href=""><img class="img-responsive" src="../img/facebook.png" alt="Facebook"></a>
+                                  <a href=""><img class="img-responsive" src="../img/vk.png" alt="Vkontakte"></a>
+                                  <a href=""><img class="img-responsive" src="../img/twitter.png" alt="Twitter"></a>
+                                  <a href=""><img class="img-responsive" src="../img/odnokl.png" alt="Odnoklassniki"></a>
+                                </div><!--buttons-->
+                              </div><!--socials-->
+                            </div><!--description-->
+                          </div>
+                     <div class="slider-item item">
+                        
+                              <div><h1>Номинация: народный герой</h1></div>
+                            <div id="photo-2">
+                              <img class="img-responsive" src="../img/timaty_pers.png" alt="ТИМАТИ"></div>
+                            <div id="description">
+                              <h2>Елена Темникова</h2>
+                              <p>Елена Темникова нечасто делится совместными фотографиями дочки, но иногда радует своих подписчиков новыми снимками с дочуркой. Кажется, для певицы самое лучшее времяпрепровождение - время за игрой с Сашенькой.</p>
+                              <p>На этот раз Елена рассказала подписчикам о любимых игрушках дочки. Малышка любит свои вязаные варежки и, несмотря на весну, предпочитает их не убирать в дальний ящик. Как написала Елена, малышка надевает варежки бобру. И правда, вдруг замерзнет!</p>
+                              <div id="socials">
+                                <h3>Проголосуй за этого номинанта через социальные сети</h3>
+                                <div id="buttons">
+                                  <a href=""><img class="img-responsive" src="../img/facebook.png" alt="Facebook"></a>
+                                  <a href=""><img class="img-responsive" src="../img/vk.png" alt="Vkontakte"></a>
+                                  <a href=""><img class="img-responsive" src="../img/twitter.png" alt="Twitter"></a>
+                                  <a href=""><img class="img-responsive" src="../img/odnokl.png" alt="Odnoklassniki"></a>
+                                </div><!--buttons-->
+                              </div><!--socials-->
+                            </div><!--description-->
+                      </div>
+                   </div>
+                <!-- <div id="prev"></div>
+                <div id="next"></div>
+                <div id="close"></div> -->
+              </div><!--slider-->
+          </div>
+          </div>
+        </div>
+        </div>
+<!-- Next / Previous controls here -->
+  <a class="left carousel-control" href="#carousel-modal-demo" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-modal-demo" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+        </div></div></div></div></div>
+        <!--Конец слайдера -->
+       <!--<div id="mask"></div>Фон затемнения-->
+        <!-- Пара десятилетия -->
+        <div class="nomination col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <div class="nomination-title">
+            <h2> ОК! Пара десятилетия</h2></div>
+              <div><h3>За их романом наблюдали тысячи пар глаз, следили папарацци, 
+                 фанаты рисовали своих кумиров. Но влюбленные смогли пронести свои яркие чувства сквозь
+                 десятилетие, добавить в них изюминку и сохранить самое главное - любовь.</h3></div>
+
+                  <div class="row">
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4">
+                      <div id="photo-2">
+                        <img class="img-responsive" src="../img/ionova.png" alt="Ионова-Чистяков">
+                      </div>
+                      <div id="text">Ионова-Чистяков</div>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4">
+                      <div id="photo-2">
+                        <img class="img-responsive" src="../img/galkin-pugacheva.png" alt="Пугачева-Галкин">
+                      </div>
+                      <div id="text">Пугачева-Галкин</div>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4">
+                      <div id="photo-2">
+                        <img class="img-responsive" src="../img/rudkovskaya.png" alt="Рудковская-Плющенко">
+                      </div>
+                      <div id="text">Рудковская-Плющенко</div>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4">
+                      <div id="photo-2">
+                        <img class="img-responsive" src="../img/presnyakov.png" alt="Подольская-Пресняков">
+                      </div>
+                      <div id="text">Подольская-Пресняков</div>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4">
+                      <div id="photo-2">
+                        <img class="img-responsive" src="../img/alsu.png" alt="Алсу-Абрамов">
+                      </div>
+                      <div id="text">Алсу-Абрамов</div>
+                    </div>
+                  </div>
+               </div>
+        <!-- Театр 21 века -->
+        <div class="nomination col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <div class="nomination-title">
+            <h2> ОК! Театр 21 века</h2></div>
+              <div id="nomination-descr"><h3>Театр - новый секс! По крайней мере так считают все культовые таблоиды. Зрители вновь переполняют залы, именно на театральных сценах происходят звездные открытия.</h3></div>
+
+                  <div class="row">
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4">
+                      <div id="photo-1">
+                        <img class="img-responsive" src="../img/bogomolov.png" alt="Богомолов">
+                      </div>
+                      <div id="text">Константин Богомолов</div>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4">
+                      <div id="photo-1">
+                        <img class="img-responsive" src="../img/serebrennikov.png" alt="Серебренников">
+                      </div>
+                      <div id="text">Кирилл Серебренников</div>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4">
+                      <div id="photo-1">
+                        <img class="img-responsive" src="../img/molochnikov.png" alt="Молочников">
+                      </div>
+                      <div id="text">Александр Молочников</div>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4">
+                      <div id="photo-1">
+                        <img class="img-responsive" src="../img/pisarev.png" alt="Писарев">
+                      </div>
+                      <div id="text">Евгений Писарев</div>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4">
+                      <div id="photo-1">
+                        <img class="img-responsive" src="../img/karbauskis.png" alt="Карбаускис">
+                      </div>
+                      <div id="text">Миндаугас Карбаускис</div>
+                    </div>
+                  </div>
+               </div>
+        <!-- Народный герой -->
+        <div class="nomination col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <div class="nomination-title">
+            <h2>ОК! Народный герой</h2></div>
+              <div id="nomination-descr"><h3>Тысячи поклонников, миллионы подписчиков, пародии, звания, всенародная любовь! Кто стал за 10 лет неотъемлемой частью нашей жизни?</h3></div>
+
+                  <div class="row">
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4">
+                      <div id="photo-1">
+                        <img class="img-responsive" src="../img/urgant.png" alt="Ургант">
+                      </div>
+                      <div id="text">Иван Ургант</div>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4">
+                      <div id="photo-1">
+                        <img class="img-responsive" src="../img/brezhneva.png" alt="Брежнева">
+                      </div>
+                      <div id="text">Вера Брежнева</div>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4">
+                      <div id="photo-1">
+                        <img class="img-responsive" src="../img/meladze.png" alt="Меладзе">
+                      </div>
+                      <div id="text">Валерий Меладзе</div>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4">
+                      <div id="photo-1">
+                        <img class="img-responsive" src="../img/kirkorov.png" alt="Киркоров">
+                      </div>
+                      <div id="text">Филипп Киркоров</div>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4">
+                      <div id="photo-1">
+                        <img class="img-responsive" src="../img/gagarina.png" alt="Гагарина">
+                      </div>
+                      <div id="text">Полина Гагарина</div>
+                    </div>
+                  
+                  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4">
+                      <div id="photo-1">
+                        <img class="img-responsive" src="../img/valeriya.png" alt="Валерия">
+                      </div>
+                      <div id="text">Валерия</div>
+                    </div>
+                  </div>
+                </div>
+        <!-- Новые лица - музыка -->
+        <div class="nomination col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <div class="nomination-title">
+            <h2>Новые лица - музыка</h2></div>
+              <div id="nomination-descr"><h3>Открытие, фурор, неожиданность! Сотни новых звезд загораются и гаснут каждый год. Кто ворвался в свет софитов и удержался на небосклоне за последние несколько лет?</h3></div>
+
+                  <div class="row">
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4">
+                      <div id="photo-1">
+                        <img class="img-responsive" src="../img/krid.png" alt="Крид">
+                      </div>
+                      <div id="text">Егор Крид</div>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4">
+                      <div id="photo-1">
+                        <img class="img-responsive" src="../img/karaulova.png" alt="Караулова">
+                      </div>
+                      <div id="text">Юлиана Караулова</div>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4">
+                      <div id="photo-1">
+                        <img class="img-responsive" src="../img/iowa.png" alt="IOWA">
+                      </div>
+                      <div id="text">IOWA</div>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4">
+                      <div id="photo-1">
+                        <img class="img-responsive" src="../img/mishel.png" alt="Мишель">
+                      </div>
+                      <div id="text">Моя Мишель</div>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4">
+                      <div id="photo-1">
+                        <img class="img-responsive" src="../img/l'one.png" alt="L'ONE">
+                      </div>
+                      <div id="text">L'ONE</div>
+                    </div>
+                  </div>
+               </div>
+        <!-- Герой из сети -->
+        <div class="nomination col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <div class="nomination-title">
+            <h2>Герой из сети</h2></div>
+              <div id="nomination-descr"><h3>Instagram, Facebook, Vkontakte - в 21 веке все тайное становится явным, благодаря Сети, а многим удается получить расположение миллионов подписчиков в соцсетях.</h3></div>
+
+                  <div class="row">
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4">
+                      <div id="photo-1">
+                        <img class="img-responsive" src="../img/gorbacheva.png" alt="Горбачева">
+                      </div>
+                      <div id="text">Ирина Горбачева</div>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4">
+                      <div id="photo-1">
+                        <img class="img-responsive" src="../img/medynich.png" alt="Медынич">
+                      </div>
+                      <div id="text">Ольга Медынич</div>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4">
+                      <div id="photo-1">
+                        <img class="img-responsive" src="../img/bob.png" alt="Галина Боб">
+                      </div>
+                      <div id="text">галина Боб</div>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4">
+                      <div id="photo-1">
+                        <img class="img-responsive" src="../img/osman.png" alt="Осман">
+                      </div>
+                      <div id="text">Мурад и Наталия Осман</div>
+                    </div>
+
+                  </div>
+               </div>
+        <!-- Приз зрительских симпатий -->
+        <div class="nomination col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <div class="nomination-title">
+            <h2>Приз зрительских симпатий</h2></div>
+              <div id="nomination-descr"><h3>Instagram, Facebook, Vkontakte - в 21 веке все тайное становится явным, благодаря Сети, а многим удается получить расположение миллионов подписчиков в соцсетях.</h3></div>
+
+                  <div class="row">
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4">
+                      <div id="photo-1">
+                        <img class="img-responsive" src="../img/gorbacheva.png" alt="Горбачева">
+                      </div>
+                      <div id="text">Ирина Горбачева</div>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4">
+                      <div id="photo-1">
+                        <img class="img-responsive" src="../img/medynich.png" alt="Медынич">
+                      </div>
+                      <div id="text">Ольга Медынич</div>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4">
+                      <div id="photo-1">
+                        <img class="img-responsive" src="../img/bob.png" alt="Галина Боб">
+                      </div>
+                      <div id="text">Галина Боб</div>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4">
+                      <div id="photo-1">
+                        <img class="img-responsive" src="../img/osman.png" alt="Осман">
+                      </div>
+                      <div id="text">Мурад и Наталия Осман</div>
+                    </div>
+                  </div>
+                </div>
+    </div>
+   </div>
+
+    <footer class="panel-footer">
       <div class="container">
         <div class="row">
           <section id="logo" class="col-sm-3">
-            <a href="http://www.acmgroup.info/"><img class="img-responsive" src="img/acmg_logo_.png" alt="Осман"></a>
+            <a href="http://www.acmgroup.info/"><img class="img-responsive" src="../img/acmg_logo_.png" alt="Осман"></a>
             <hr class="visible-xs">
           </section>
           <section id="brands" class="col-sm-3">
@@ -558,18 +476,20 @@
             <hr class="visible-xs">
           </section>
           <section id="socials" class="col-sm-3">
-            <button><a href="https://www.instagram.com/acmg_official/"><img class="img-responsive" src="img/footer_inst.png" alt="Instagram"></a></button>
-            <button><a href="https://www.facebook.com/acmg.official?fref=tsACMG"><img class="img-responsive" src="img/footer_facebook.png" alt="Facebook"></a></button>
-            <button><a href="https://twitter.com/acmg_official?fref=ts"><img class="img-responsive" src="img/footer_twitter.png" alt="Twitter"></a></button>
+            <button><a href="https://www.instagram.com/acmg_official/"><img class="img-responsive" src="../img/footer_inst.png" alt="Instagram"></a></button>
+            <button><a href="https://www.facebook.com/acmg.official?fref=tsACMG"><img class="img-responsive" src="../img/footer_facebook.png" alt="Facebook"></a></button>
+            <button><a href="https://twitter.com/acmg_official?fref=ts"><img class="img-responsive" src="../img/footer_twitter.png" alt="Twitter"></a></button>
             <hr class="visible-xs">
           </section>
         </div>
       </div>
     </footer>
 
-  <!-- jQuery (Bootstrap JS plugins depend on it) -->
-  <script src="js/jquery-2.1.4.min.js"></script>
+    <!-- Libs -->
+  <script src="js/jquery-3.1.0.min.js"></script>
+  <script src="js/jquery-2.1.4.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script src="js/script.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <!-- <script src="js/script.js"></script> -->
 </body>
 </html>

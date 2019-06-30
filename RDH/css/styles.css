@@ -602,9 +602,9 @@ section#subscription .container, section#classic .container, .panel-footer .cont
   border: none;
   border-radius: 0;
 }
-.subs ul {
+.subs .input-group {
   padding: 20px 0 20px 0;
-  display: table;
+  /*display: table;*/
   width: 100%;
 }
 .subs input {

@@ -596,7 +596,7 @@ section#subscription .container, section#classic .container, .panel-footer .cont
   color: #fff;
   font-size: 25px;
 }
-.subs .btn {
+.subs .input-group-prepend {
   padding: 2px;
   background-color: #122ded;
   border: none;

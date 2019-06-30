@@ -596,15 +596,15 @@ section#subscription .container, section#classic .container, .panel-footer .cont
   color: #fff;
   font-size: 25px;
 }
-.subs .input-group-prepend {
+.subs .btn {
   padding: 2px;
   background-color: #122ded;
   border: none;
   border-radius: 0;
 }
-.subs .input-group {
+.subs ul {
   padding: 20px 0 20px 0;
-  /*display: table;*/
+  display: table;
   width: 100%;
 }
 .subs input {

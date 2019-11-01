@@ -7,17 +7,17 @@ $(function () {
 		} 
 	});
 	//slider
-	function htmSlider(){
+	/*function htmSlider(){
 		var slideWrap = jQuery('.slidewrapper');
-		/* ссылки на предудыщий иследующий слайд */
+		/* ссылки на предудыщий иследующий слайд
 		var nextLink = jQuery('#next');
 		var prevLink = jQuery('#prev');
 		var is_animate = false;
-		/* ширина слайда с отступами */
+		/* ширина слайда с отступами 
 		var slideWidth = jQuery('.slider-item').outerWidth();
-		/* смещение слайдера */
+		/* смещение слайдера 
 		var newLeftPos = slideWrap.position().left - slideWidth;
-		/* Клик по ссылке на следующий слайд */
+		/* Клик по ссылке на следующий слайд 
 		nextLink.click(function(){
 			if(!slideWrap.is(':animated')) {
 	
@@ -30,7 +30,7 @@ $(function () {
 				});
 			}
 		});
-		/* Клик по ссылке на предыдующий слайд */
+		/* Клик по ссылке на предыдующий слайд 
 		prevLink.click(function(){
 			if(!slideWrap.is(':animated')) {
 			
@@ -43,7 +43,7 @@ $(function () {
 			}
 		});
 	}
-      /*Показ, закрытие слайдера и затемнение контента*/
+      /*Показ, закрытие слайдера и затемнение контента
 	  $('a[name=modal]').click(function(e) {
 	        e.preventDefault();
 	        var id = $(this).attr('href');
@@ -64,5 +64,5 @@ $(function () {
 	        $('.slider-box').hide();
 	    });
 
-	htmSlider();
+	htmSlider();*/
 });

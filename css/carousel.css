@@ -1,0 +1,62 @@
+/*
+    code by Iatek LLC 2018 - CC 2.0 License - Attribution required
+    code customized by Azmind.com
+*/
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+@media (min-width: 576px) and (max-width: 768px) {
+
+}
+@media (min-width: 576px) {
+    
+}
+@media (min-width: 768px) { 
+}
+@media (min-width: 991px) {
+    div#carousel-section .carousel-item {
+        margin-right: 0;
+    }
+    /* show 2 items */
+    div#carousel-section .carousel-inner .active + .carousel-item {
+        display: block;
+    }
+    div#carousel-section .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+    div#carousel-section .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item {
+        transition: none;
+    }
+    div#carousel-section .carousel-inner .carousel-item-next {
+        position: relative;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    /* left or forward direction */
+    div#carousel-section .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+    div#carousel-section .carousel-item-next.carousel-item-left + .carousel-item,
+    div#carousel-section .carousel-item-next.carousel-item-left + .carousel-item {
+        position: relative;
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+    /* farthest right hidden item must be also positioned for animations */
+    div#carousel-section .carousel-inner .carousel-item-prev.carousel-item-right {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+    /* right or prev direction */
+    div#carousel-section .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+    div#carousel-section .carousel-item-prev.carousel-item-right + .carousel-item,
+    div#carousel-section .carousel-item-prev.carousel-item-right + .carousel-item  {
+        position: relative;
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+}

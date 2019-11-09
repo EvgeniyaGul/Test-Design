@@ -310,6 +310,14 @@ div.sixthSlide .nummer-circle, div.sixthSlide .nummer-circle:before {
 div.sixthSlide .nummer-circle:before {
 	border-left: 50px solid #5fac22;
 }
+div#carousel-section .carousel-item .nummer {
+	display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: end;
+}
 .nummer-circle span {
 	font-size: 3rem;
 }
@@ -691,4 +699,12 @@ div.scrollup:hover {
 @media (min-width: 1200px) { 
 
 }
-
+/*IE10, IE11 */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+   #carousel-section {
+    width: 100%; 
+   }
+#carousel-section .carousel-item .row {
+	width: 100%; 
+   } 
+} 
